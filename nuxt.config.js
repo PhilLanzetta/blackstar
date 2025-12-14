@@ -473,223 +473,237 @@ const dynamicRoutes = async () => {
 
 export default {
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    cmsUrl: process.env.CMS_URL || '/'
+    baseUrl: process.env.BASE_URL || "http://localhost:3000",
+    cmsUrl: process.env.CMS_URL || "/",
   },
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'BlackStar Film Festival',
+    title: "BlackStar Film Festival",
     htmlAttrs: {
-      lang: 'en'
+      lang: "en",
     },
     meta: [
-      { charset: 'utf-8' },
+      { charset: "utf-8" },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: ''
-      }
+        hid: "description",
+        name: "description",
+        content: "",
+      },
     ],
     link: [
       {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/apple-touch-icon.png'
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
       },
       {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png'
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
       },
       {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png'
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png",
       },
       {
-        rel: 'manifest',
-        href: '/site.webmanifest'
-      }
+        rel: "manifest",
+        href: "/site.webmanifest",
+      },
     ],
     script: [
       {
-        src: 'https://js.stripe.com/v3/',
-        body: false
+        src: "https://js.stripe.com/v3/",
+        body: false,
       },
       {
-        src: 'https://festival.blackstarfest.org/loader.js',
-        body: false
-      }
-    ]
+        src: "https://festival.blackstarfest.org/loader.js",
+        body: false,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/assets/css/global.css',
-    '~/assets/css/components/sponsor.css'
-  ],
+  css: ["~/assets/css/global.css", "~/assets/css/components/sponsor.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     {
-      src: '~/plugins/v-visibility.client.js',
-      ssr: false
+      src: "~/plugins/v-visibility.client.js",
+      ssr: false,
     },
     {
-      src: '~/plugins/vue-awesome-swiper.client.js',
-      ssr: false
+      src: "~/plugins/vue-awesome-swiper.client.js",
+      ssr: false,
     },
     {
-      src: '~plugins/rellax.client.js',
-      ssr: false
+      src: "~plugins/rellax.client.js",
+      ssr: false,
     },
-    '~/plugins/axios-config.js',
-    '~/plugins/filters.js',
+    "~/plugins/axios-config.js",
+    "~/plugins/filters.js",
     {
-      src: '~plugins/directives.client.js',
-      ssr: false
-    },
-    {
-      src: '~plugins/add-to-calendar.client.js',
-      ssr: false
+      src: "~plugins/directives.client.js",
+      ssr: false,
     },
     {
-      src: '~plugins/iframe-resizer.client.js',
-      ssr: false
+      src: "~plugins/add-to-calendar.client.js",
+      ssr: false,
     },
     {
-      src: '~/plugins/lottie',
-      mode: 'client',
-      ssr: false
+      src: "~plugins/iframe-resizer.client.js",
+      ssr: false,
     },
     {
-      src: '~/plugins/aos.client.js',
-      mode: 'client',
-      ssr: false
-    }
+      src: "~/plugins/lottie",
+      mode: "client",
+      ssr: false,
+    },
+    {
+      src: "~/plugins/aos.client.js",
+      mode: "client",
+      ssr: false,
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
-    '~/components',
-    '~/components/global',
-    '~/components/animation',
-    '~/components/layouts',
-    '~/components/layouts/partials',
-    '~/templates'
+    "~/components",
+    "~/components/global",
+    "~/components/animation",
+    "~/components/layouts",
+    "~/components/layouts/partials",
+    "~/templates",
   ],
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    "@nuxtjs/tailwindcss",
   ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    '@nuxtjs/svg',
-    ['nuxt-lazy-load', {
-      images: true,
-      videos: true,
-      audios: true,
-      iframes: false,
-      native: true,
-      polyfill: false,
-      directiveOnly: false,
-      defaultImage: '/images/default-image.jpg',
-      loadingClass: 'isLoading',
-      loadedClass: 'isLoaded',
-      appendClass: 'lazyLoad'
-    }],
+    "@nuxtjs/axios",
+    "@nuxtjs/svg",
     [
-      'nuxt-mq',
+      "nuxt-lazy-load",
       {
-        defaultBreakpoint: 'sm',
+        images: true,
+        videos: true,
+        audios: true,
+        iframes: false,
+        native: true,
+        polyfill: false,
+        directiveOnly: false,
+        defaultImage: "/images/default-image.jpg",
+        loadingClass: "isLoading",
+        loadedClass: "isLoaded",
+        appendClass: "lazyLoad",
+      },
+    ],
+    [
+      "nuxt-mq",
+      {
+        defaultBreakpoint: "sm",
         breakpoints: {
           sm: 640,
           md: 768,
           lg: 1024,
           xl: 1280,
-          xxl: 1536
-        }
-      }
+          xxl: 1536,
+        },
+      },
     ],
-    ['nuxt-gmaps', {
-      key: 'AIzaSyDjbBvs0AY6CZxkzr7YKkeb0xgnNWoEr6I'
-    }],
-    'cookie-universal-nuxt',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/gtm'
+    [
+      "nuxt-gmaps",
+      {
+        key: process.env.GMAP,
+      },
+    ],
+    "cookie-universal-nuxt",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/gtm",
   ],
 
   gtm: {
     enabled: true,
-    id: 'GTM-5HXVR9J'
+    id: "GTM-5HXVR9J",
   },
 
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend (config) {
-      config.resolve.alias.vue = 'vue/dist/vue.common'
+    extend(config) {
+      config.resolve.alias.vue = "vue/dist/vue.common";
     },
-    extractCSS: true
+    extractCSS: true,
   },
   generate: {
-    dir: 'dist',
+    dir: "dist",
     routes: dynamicRoutes,
     fallback: true,
-    interval: 1000
+    interval: 1000,
   },
   sitemap: {
-    hostname: process.env.BASE_URL
+    hostname: process.env.BASE_URL,
   },
   hooks: {
     sitemap: {
       generate: {
-        async before (nuxt, sitemapOptions) {
-          const axiosConfig = getAxiosConfig(process.env.CMS_URL, process.env.BASE_URL)
+        async before(nuxt, sitemapOptions) {
+          const axiosConfig = getAxiosConfig(
+            process.env.CMS_URL,
+            process.env.BASE_URL
+          );
 
-          const redirects = await axios.get(`${axiosConfig.cmsUrl}/wp-json/blackstar/v1/redirects`, axiosConfig.config)
+          const redirects = await axios.get(
+            `${axiosConfig.cmsUrl}/wp-json/blackstar/v1/redirects`,
+            axiosConfig.config
+          );
 
-          let excludedRoutes = redirects.data.filter((redirect) => {
-            return redirect.enabled
-          }).map((redirect) => {
-            return redirect.match_url
-          })
+          let excludedRoutes = redirects.data
+            .filter((redirect) => {
+              return redirect.enabled;
+            })
+            .map((redirect) => {
+              return redirect.match_url;
+            });
 
-          excludedRoutes = excludedRoutes.concat(['/preview/archive-item',
-            '/preview/festival-event',
-            '/preview/gallery',
-            '/preview/lumen-episode',
-            '/preview/opportunity',
-            '/preview/page',
-            '/preview/post',
-            '/festival/films',
-            '/preview/program-event',
-            '/preview/seen-article',
-            '/preview/festival-film',
-            '/preview/festival-post',
-            '/festival/events/suppressed'
-          ])
+          excludedRoutes = excludedRoutes.concat([
+            "/preview/archive-item",
+            "/preview/festival-event",
+            "/preview/gallery",
+            "/preview/lumen-episode",
+            "/preview/opportunity",
+            "/preview/page",
+            "/preview/post",
+            "/festival/films",
+            "/preview/program-event",
+            "/preview/seen-article",
+            "/preview/festival-film",
+            "/preview/festival-post",
+            "/festival/events/suppressed",
+          ]);
 
           sitemapOptions[0].filter = ({ routes }) => {
-            return routes.filter(route => !excludedRoutes.includes(route.url))
-          }
-        }
-      }
-    }
-  }
-}
+            return routes.filter(
+              (route) => !excludedRoutes.includes(route.url)
+            );
+          };
+        },
+      },
+    },
+  },
+};
