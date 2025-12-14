@@ -1,0 +1,22 @@
+.org-team-member {
+  @apply block py-10 text-white;
+}
+
+.org-team-member__image {
+  @apply relative;
+}
+
+.org-team-member__image::before {
+  @apply block;
+
+  padding-top: 120%;
+  content: " ";
+}
+
+.org-team-member__image__inside {
+  @apply absolute top-0 left-0 w-full h-full rounded-3xl lg:rounded-4xl overflow-hidden;
+}
+
+.org-team-member__image__inside img {
+  @apply block w-full h-full object-cover;
+}

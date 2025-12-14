@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "watch/colour-pallete";
+@import "watch/tailwind-overrides";
+@import "watch/layout/nav";
+
+html, body {
+  background: $c-navy url("images/mobile-bg@2x.png") top left;
+  background-size: 100% auto;
+  font-family: $font;
+  line-height: 1.75;
+
+  @include md() {
+    background: $c-navy url("images/bg@2x.png") top left;
+    background-size: 100% auto;
+  }
+}
+
+@import "watch/layout/nav";
+@import "watch/layout/single";
+@import "watch/layout/social-shares";
+@import "watch/layout/live";
+@import "watch/layout/modals";
+@import "watch/components/buttons";
+

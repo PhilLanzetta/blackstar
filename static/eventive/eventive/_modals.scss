@@ -1,0 +1,20 @@
+div[data-iframe-height] {
+  > div {
+    border-radius: 0 !important;
+    border: 5px solid $c-yellow !important;
+
+    form {
+      input {
+        color: $c-navy !important;
+      }
+    }
+
+    > div > div > div {
+      h2 {
+        font-size: 2rem !important;
+        font-family: $fontLightItalic !important;
+        color: $c-navy !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.resp-sharing-button__group {
+  padding-top: 4rem;
+
+  .resp-sharing-button {
+    border-radius: 0;
+    @include border;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+
+  .react-add-to-calendar {
+    .text-xs {
+      font-size: 1.2rem !important;
+    }
+  }
+  .resp-sharing-button--copy,
+  .react-add-to-calendar .resp-sharing-button {
+    @extend .eventive__button.bg-indigo-600;
+    display: block;
+    height: auto;
+
+    .text-xs {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .resp-sharing-button--copy {
+    @extend .eventive__button.bg-reverse;
+  }
+
+  .react-add-to-calendar__dropdown {
+    background: $c-beige;
+    color: $c-black;
+    padding: 0;
+    min-width: 200px;
+    margin-top: -10px;
+    overflow: hidden;
+    @include borderSm;
+
+    ul li {
+      margin-bottom: 0 !important;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

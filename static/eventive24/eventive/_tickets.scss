@@ -1,0 +1,99 @@
+.Eventive--tickets {
+  background: transparent;
+  color: $c-black;
+
+  > div {
+    color: $c-black !important;
+  }
+
+  > div {
+    &:first-child {
+    }
+  }
+
+  svg + div > div {
+    div:last-child {
+      box-shadow: none !important;
+    }
+  }
+
+  input {
+    color: $c-white !important;
+  }
+
+  button {
+    background: $c-black !important;
+    color: $c-beige !important;
+    box-shadow: none !important;
+    vertical-align: 2px;
+    transition: none !important;
+    @include borderSm;
+
+    @include lg {
+      padding: 0 !important;
+    }
+
+    span {
+      vertical-align: 0 !important;
+      text-transform: none !important;
+      color: $c-beige !important;
+      font-weight: normal !important;
+    }
+
+    span.icon-qrcode {
+      display: none !important;
+      line-height: 1 !important;
+
+      @include lg {
+        display: inline-block !important;
+      }
+    }
+
+    &:hover {
+      background: $c-black !important;
+
+      span {
+        color: $c-beige !important;
+
+        &.icon-qrcode {
+          font-family: icomoon !important;
+          line-height: 1 !important;
+        }
+      }
+
+    }
+
+    > div > div {
+      background: transparent !important;
+      padding: 0 !important;
+      border: 0 !important;
+      transition: none !important;
+    }
+  }
+
+  &.Eventive--tickets--hasTickets {
+    > div + div > div + div > div > div > div > div {
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      margin-right: 0.1rem;
+
+      &.eventive__universal_ticket-button__button {
+        @include borderSm;
+      }
+
+      @include lg {
+        margin-right: 0.5rem;
+
+      }
+    }
+    > div + div > div > div > div > div + div + div {
+      margin-bottom: 0.5rem !important;
+    }
+  }
+
+  .eventive__universal_ticket-button__button {
+    background: transparent !important;
+    @include borderSm;
+  }
+}

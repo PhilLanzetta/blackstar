@@ -1,0 +1,65 @@
+@mixin sm {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+@mixin fontItalic {
+  font-family: $fontItalic;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin fontLight {
+  font-family: $fontLight;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin fontLightItalic {
+  font-family: $fontLightItalic;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin border {
+  border: 5px solid $c-navy !important;
+}
+
+@mixin tag {
+  background: transparent !important;
+  color: $c-blue !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-bottom: 2px solid $c-blue !important;
+  padding: 0 !important;
+  font-size: 0.9rem !important;
+  font-family: $font !important;
+  font-style: normal !important;
+}

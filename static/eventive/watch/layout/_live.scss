@@ -1,0 +1,59 @@
+.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 {
+  color: $c-white;
+  @include fontLightItalic;
+}
+
+.group {
+  &:hover {
+    div {
+      box-shadow: none !important;
+      transform: none !important;
+    }
+  }
+}
+
+.slider-next-background,
+.slider-prev-background {
+  background: transparent;
+}
+
+.group a {
+  > div {
+    @include border;
+
+    > div.absolute {
+      .text-xs.text-always-white {
+        display: none !important;
+      }
+
+      &.bottom-0 {
+        background: $c-yellow !important;
+        width: auto;
+        max-width: 100%;
+        @include border;
+        color: $c-navy;
+        font-size: 1.1rem;
+
+        .text-xs {
+          @include fontLightItalic;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    > .inline-flex {
+      background: transparent;
+      color: $c-yellow;
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      box-shadow: none !important;
+      transform: none !important;
+
+      > div.absolute.bottom-0 {
+        background: $c-pink !important;
+      }
+    }
+  }
+}

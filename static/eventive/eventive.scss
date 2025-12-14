@@ -1,0 +1,87 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html:not(.embedded) {
+  background: $c-navy;
+}
+
+html, body {
+  background: $c-navy url("images/mobile-bg@2x.png") top left;
+  background-size: 100% auto;
+  font-family: $font;
+  line-height: 1.75;
+  color: $c-beige;
+
+  @include md() {
+    background: $c-navy url("images/bg@2x.png") top left;
+    background-size: 100% auto;
+  }
+}
+
+#app > div > div,
+.tenant-injected-html p span {
+  color: $c-beige !important;
+}
+
+.tenant-injected-html {
+  p {
+    text-align: center;
+  }
+  a {
+    color: $c-pink !important;
+    font-family: $fontLightItalic !important;
+    text-decoration: none !important;
+  }
+}
+
+form {
+  max-width: none !important;
+
+  input {
+    color: $c-white !important;
+  }
+
+  label, div {
+    color: $c-beige !important;
+  }
+
+
+  a {
+    font-family: $fontLightItalic !important;
+    color: $c-pink !important;
+    text-decoration: none;
+  }
+}
+
+h2 + .tenant-injected-html > p {
+  text-align: center !important;
+}
+
+h2 + .tenant-injected-html + div > div {
+  height: auto !important;
+}
+
+#Eventive--banner {
+  margin-bottom: 1rem !important;
+}
+
+/*
+#app > div > div > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(1):not(div[data-radium]) {
+  display: none;
+}
+*/
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div, #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div > div {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+@import "eventive/nav";
+@import "eventive/buttons";
+@import "eventive/modals";
+@import "eventive/schedule";
+@import "eventive/film-guide";
+@import "eventive/tickets";
+@import "eventive/passes";

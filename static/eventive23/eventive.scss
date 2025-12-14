@@ -1,0 +1,159 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html:not(.embedded) {
+  background: $c-black;
+}
+
+html, body {
+  background: $c-beige url("images/mobile-bg@2x.png") top left;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: $font;
+  font-weight: 500;
+  line-height: 1.75;
+  color: $c-black;
+  overflow: auto;
+
+  @include md() {
+    background: $c-beige url("images/bg@2x.png") top left;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+#app > div > div,
+.tenant-injected-html p span {
+  color: $c-black !important;
+  box-shadow: none !important;
+}
+
+.tenant-injected-html {
+  p {
+    text-align: center;
+  }
+  a {
+    color: $c-black !important;
+    font-family: $font !important;
+    text-decoration: none !important;
+  }
+}
+
+form {
+  max-width: none !important;
+
+  input {
+    color: $c-black !important;
+  }
+
+  label, div {
+    color: $c-black !important;
+  }
+
+  label {
+    @include fontBold;
+    font-size: 1rem !important;
+  }
+
+  a {
+    font-family: $font !important;
+    color: $c-black !important;
+    text-decoration: none;
+  }
+
+  div {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+h2 + .tenant-injected-html > p {
+  text-align: center !important;
+}
+
+h2 + .tenant-injected-html + div > div {
+  height: auto !important;
+}
+
+#Eventive--banner {
+  margin-bottom: 1rem !important;
+}
+
+/*
+#app > div > div > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(1):not(div[data-radium]) {
+  display: none;
+}
+*/
+
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div, #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div > div {
+  // background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+div[data-iframe-height] .StripeElement {
+  background: $c-white !important;
+  color: $c-black !important;
+  padding: 1rem;
+}
+
+
+.eventive-mode-switcher__schedule {
+  margin: 0 5px;
+
+  button > div > div:not(.parallax-content) {
+    background: $c-blue !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+  }
+
+  button:hover {
+    > div > div:not(.parallax-content) {
+      background: $c-blue !important;
+    }
+  }
+}
+
+.eventive-mode-switcher__virtual-festival {
+  margin: 0 5px;
+
+  button > div > div:not(.parallax-content) {
+    background: $c-yellow !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+  }
+
+  button:hover {
+    > div > div:not(.parallax-content) {
+      background: $c-yellow !important;
+    }
+  }
+}
+
+.eventive-mode-switcher__film-guide  button > div > div:not(.parallax-content) {
+  background: $c-green !important;
+  color: $c-black !important;
+
+  span {
+    color: $c-black !important;
+  }
+}
+
+@import "eventive/nav";
+@import "eventive/buttons";
+@import "eventive/modals";
+@import "eventive/schedule";
+@import "eventive/film-guide";
+@import "eventive/tickets";
+@import "eventive/passes";
+@import "eventive/select";

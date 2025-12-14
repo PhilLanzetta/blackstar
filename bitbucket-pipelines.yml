@@ -1,0 +1,70 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16.15.0
+
+options:
+  runtime:
+    cloud:
+      atlassian-ip-ranges: true
+
+pipelines:
+  branches:
+    staging:
+      - step:
+          name: Build and Test
+          caches:
+            - node
+          script:
+            - npm set audit false
+            - npm install
+            - CMS_URL="$CMS_URL"
+            - BASE_URL="$BASE_URL"
+            - npm run generate
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy
+          deployment: staging
+          script:
+            - pipe: atlassian/rsync-deploy:0.6.0
+              variables:
+                USER: 'blackstarstaging'
+                SERVER: '185.230.220.222'
+                REMOTE_PATH: '/home/blackstarstaging/deploy'
+                LOCAL_PATH: 'dist'
+    production:
+      - step:
+          name: Build and Test
+          size: 4x
+          caches:
+              - node
+          script:
+            - npm set audit false
+            - npm install
+            - CMS_URL="https://wp.blackstarfest.org"
+            - BASE_URL="https://www.blackstarfest.org"
+            - npm run generate
+            - cd _redirects-script
+            - npm install
+            - cd ..
+            - node _redirects-script/ https://wp.blackstarfest.org
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy
+          deployment: production
+          script:
+            - pipe: atlassian/rsync-deploy:0.6.0
+              variables:
+                USER: 'blackstar'
+                SERVER: '185.230.220.222'
+                REMOTE_PATH: '/home/blackstar/deploy'
+                LOCAL_PATH: 'dist'
+      - step:
+          name: Clear CloudFlare Cache
+          script:
+            - curl -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cache" -H "Authorization:Bearer ${CF_TOKEN}" --data '{"purge_everything":true}'
+

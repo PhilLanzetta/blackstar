@@ -1,0 +1,80 @@
+
+.Select-menu-outer {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-top-color: #e6e6e6 !important;
+}
+
+.Select-option {
+  background-color: #fff !important;
+  color: #666 !important;
+}
+
+
+.Select-option.is-selected {
+  background-color: #fff !important;
+  background-color: rgba(0, 0, 0, .04) !important;
+  color: #333 !important;
+}
+
+.Select-option.is-focused {
+  background-color: #fff !important;
+  background-color: rgba(0, 0, 0, .08) !important;
+  color: #333 !important;
+}
+
+.Select-option.is-disabled {
+  color: #ccc !important;
+}
+
+.Select-noresults {
+  color: #999 !important;
+}
+
+
+.Select--multi .Select-value {
+  background-color: #fff !important;
+  background-color: rgba(0, 0, 0, .08) !important;
+  border: 1px solid #fff !important;
+  border: 1px solid rgba(0, 0, 0, .24) !important;
+  color: #000 !important;
+}
+
+.Select--multi a.Select-value-label {
+  color: #000 !important;
+}
+
+.Select--multi .Select-value-icon {
+  border-right: 1px solid #0000 !important;
+  border-right: 1px solid rgba(0, 0, 0, .24) !important;
+}
+
+.Select--multi .Select-value-icon:focus, .Select--multi .Select-value-icon:hover {
+  background-color: #fff !important;
+  background-color: rgba(0, 0, 0, .08) !important;
+  color: #0000 !important;
+}
+
+.Select--multi .Select-value-icon:active {
+  background-color: #fff !important;
+  background-color: rgba(0, 0, 0, .24) !important;
+}
+
+.Select--multi.Select--rtl .Select-value-icon {
+  border-left: 1px solid #fff !important;
+  border-left: 1px solid rgba(0, 0, 0, .24) !important;
+}
+
+.Select--multi.is-disabled .Select-value {
+  background-color: #333 !important;
+  border: 1px solid #0000 !important;
+  color: #000 !important;
+}
+
+.Select--multi.is-disabled .Select-value-icon {
+  border-right: 1px solid #000 !important;
+}
+
+.Select--multi.is-disabled .Select-value-icon:active, .Select--multi.is-disabled .Select-value-icon:focus, .Select--multi.is-disabled .Select-value-icon:hover {
+  background-color: #000 !important;
+}

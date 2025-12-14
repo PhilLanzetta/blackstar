@@ -1,0 +1,241 @@
+.Films--film_container {
+  a {
+    > div > div {
+      background: transparent !important;
+      border: 0 !important;
+      color: $c-black !important;
+    }
+
+    &:hover {
+      > div > div {
+        background: transparent !important;
+        border: 0 !important;
+
+        span {
+          color: $c-black !important;
+          font-family: $font !important;
+        }
+      }
+    }
+  }
+}
+
+.Films--film_filter_editor {
+  div {
+    border-radius: 0 !important;
+  }
+
+  > div {
+    &:first-child {
+      background: $c-green !important;
+      color: $c-black !important;
+
+      input {
+        background: $c-green !important;
+        color: $c-black !important;
+      }
+
+      svg {
+        fill: $c-black !important;
+      }
+    }
+  }
+}
+
+.Films--film_filter_editor--tags {
+  background: transparent !important;
+  box-shadow: none !important;
+
+  .Tag {
+    @include tag;
+    color: $c-black !important;
+    border-color: $c-black !important;
+    margin-right: 1rem !important;
+  }
+}
+
+
+.Films--film_container {
+  a {
+    transform: none !important;
+
+    div {
+      transform: none !important;
+    }
+
+    > div:not(.parallax) {
+      border-radius: 0 !important;
+      padding: 1rem !important;
+      background-color: transparent !important;
+
+      h1 {
+        color: $c-black !important;
+        font-family: $font;
+        font-weight: normal;
+      }
+
+      h2 {
+        color: $c-black !important;
+        font-family: $font;
+        font-weight: normal;
+      }
+
+      .Tag {
+        @include tag;
+      }
+    }
+  }
+
+  .parallax .parallax-front {
+    background: $c-green !important;
+    height: auto !important;
+    width: auto !important;
+    top: auto !important;
+    bottom: 0 !important;
+    text-shadow: none !important;
+    color: $c-black !important;
+    text-align: left !important;
+
+    h1 {
+      padding: 1rem 1rem 0.25rem !important;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.1rem;
+    }
+
+    > div {
+      top: 2px !important;
+      right: 0 !important;
+    }
+  }
+
+  a {
+    &:hover {
+      .parallax .parallax-front {
+        background: $c-black !important;
+        color: $c-beige !important;
+      }
+    }
+  }
+}
+
+.FilmCard {
+  .Tag {
+    @include tag;
+  }
+
+  h2 {
+    font-family: $font !important;
+    color: $c-black !important;
+    font-weight: normal !important;
+  }
+
+  .tenant-injected-html {
+    p {
+      text-align: left;
+      color: $c-black;
+    }
+
+    + div + div {
+      background: $c-beige !important;
+      color: $c-black !important;
+      padding: 1rem !important;
+      border: 0 !important;
+
+      a {
+        color: $c-black !important;
+        font-family: $font !important;
+      }
+    }
+  }
+
+  button[type=button] {
+    background: $c-black !important;
+    color: $c-beige !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    min-height: 40px !important;
+    padding: 0.25rem 1rem !important;
+    box-shadow: none !important;
+
+
+    span {
+      color: $c-beige !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+
+      @include lg {
+        font-size: 1.25rem !important;
+      }
+    }
+
+    svg {
+      fill: $c-beige !important;
+    }
+
+    &:hover {
+      background: $c-green !important;
+      color: $c-black !important;
+
+      span {
+        color: $c-black !important;
+      }
+
+      svg {
+        fill: $c-black !important;
+      }
+    }
+  }
+}
+
+.FilmCard {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-black !important;
+    }
+  }
+
+  div > div {
+    ul {
+      li {
+        margin-bottom: 1rem !important;
+        div {
+          color: $c-black !important;
+        }
+        div:first-child {
+          color: $c-black !important;
+          font-family: $font;
+          font-style: normal !important;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  + div {
+    > div > a,
+    > div > span > a {
+      font-family: $font !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.eventive__ticket-button__container {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-black !important;
+    }
+  }
+}
+
+div[role="menu"] a > div > div:not(.parallax-content) {
+  background: transparent !important;
+  color: #1a243b !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  height: auto !important;
+  padding: 0 24px !important;
+  box-shadow: none !important;
+  line-height: 1.75 !important;
+}

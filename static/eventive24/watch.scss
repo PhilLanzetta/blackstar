@@ -1,0 +1,146 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "watch/colour-pallete";
+@import "watch/tailwind-overrides";
+@import "watch/layout/nav";
+
+html, body {
+  background: $c-black;
+  color: $c-white;
+  font-family: $font;
+  line-height: 1.75;
+}
+
+@import "watch/layout/nav";
+@import "watch/layout/single";
+@import "watch/layout/social-shares";
+@import "watch/layout/live";
+@import "watch/layout/modals";
+@import "watch/components/buttons";
+
+.text-gray-100.bg-gray-700:not(.rounded-full) {
+  color: $c-white !important;
+}
+
+.bg-gray-700.p-4.rounded-lg {
+  @include border;
+}
+
+input#search {
+  box-shadow: none !important;
+  @include border;
+}
+
+.h-7.w-7.text-gray-400 {
+  color: $c-white;
+}
+
+#lookup-form,
+#password-form {
+  align-items: center;
+
+  input[type="email"],
+  input[type="password"] {
+    @include borderSm;
+    color: $c-black;
+
+    box-shadow: none !important;
+  }
+
+  .eventive__button {
+    font-size: 1.4rem;
+  }
+}
+
+.mt-6 form.flex {
+  align-items: center;
+
+  #coupon {
+    @include border;
+
+    box-shadow: none !important;
+  }
+
+  .eventive__button {
+    font-size: 1.4rem;
+  }
+}
+
+h2.group {
+  @include fontBoldSerif;
+  font-size: 2rem;
+  line-height: 1;
+
+  @include lg {
+    font-size: 3.75rem;
+  }
+}
+
+.slick-slider + div.bg-gray-700 {
+  background-color: transparent;
+}
+
+.slick-slider + div.bg-gray-700 > div.bg-gray-700 {
+  @include borderWatchAlt;
+  background: $c-blue !important;
+  width: 100%;
+  left: 0;
+
+  img {
+    display: none;
+  }
+}
+
+.slick-slider + div.bg-gray-700 > div.relative {
+  padding: 2rem 2rem;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+
+    @include lg {
+      font-size: 2rem;
+    }
+  }
+
+  .text-gray-400,
+  .text-white {
+    font-weight: 400;
+    color: $c-black !important;
+  }
+
+  .eventive__button.bg-indigo-600 {
+    background: $c-black !important;
+    color: $c-white !important;
+
+    &:hover {
+      background: $c-white !important;
+      color: $c-black !important;
+    }
+  }
+}
+
+.form-checkbox + .tenant-injected-html {
+  padding: 0;
+  font-size: 1rem;
+}
+
+#__next > div:nth-child(1) > div.fixed.top-0.px-4.inset-0.z-50.pt-4.sm\:p-0.flex.flex-col.items-center.justify-center > div:nth-child(3) > div > div[role=dialog] {
+  @include borderWatch;
+}
+
+.eventive__logo-container__logo {
+  max-width: 100% !important;
+  width: 250px;
+  height: auto;
+
+  @include md {
+    width: 400px;
+  }
+
+  @include lg {
+    width: 629px;
+    height: auto;
+  }
+}

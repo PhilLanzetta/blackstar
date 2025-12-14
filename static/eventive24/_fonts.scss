@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Matter";
+  font-weight: normal;
+  src: url(fonts/MatterSQ-Regular.woff) format("woff"), url(fonts/MatterSQ-Regular.woff2) format("woff2"), url(fonts/Matter-Regular.otf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Matter";
+  font-weight: 300;
+  src:  url(fonts/Matter-Light.otf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Matter";
+  font-weight: 500;
+  src:  url(fonts/MatterSQ-Medium.woff) format("woff"), url(fonts/MatterSQ-Medium.woff2) format("woff2"), url(fonts/Matter-Medium.otf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PanamaBold";
+  font-weight: normal;
+  src: url(fonts/Panama-Bold.woff) format('woff');
+  font-display: swap;
+}
+
+
+.font-bold {
+  font-weight: 500;
+}

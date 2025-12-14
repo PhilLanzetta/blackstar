@@ -1,0 +1,48 @@
+div[data-iframe-height] {
+  > div {
+    background: $c-beige !important;
+    color: $c-black !important;
+    box-shadow: none !important;
+    @include borderSm;
+
+    a:link, a:visited {
+      color: $c-black;
+    }
+
+    div {
+      box-shadow: none !important;
+    }
+
+    @mixin xl {
+      border-radius: 3rem !important;
+   }
+
+    form {
+      input {
+        color: $c-black !important;
+      }
+
+      div {
+        color: $c-black !important;
+      }
+
+      a, a:link, a:visited {
+        color: $c-black !important;
+      }
+    }
+
+    > div > div > div {
+      h2 {
+        @include fontBold;
+        font-size: 2rem !important;
+        color: $c-black !important;
+      }
+    }
+  }
+
+  .StripeElement {
+    @include border;
+    padding: 1rem 0.75rem;
+    border-radius: 1.5rem;
+  }
+}

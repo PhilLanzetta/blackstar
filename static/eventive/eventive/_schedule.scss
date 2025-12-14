@@ -1,0 +1,172 @@
+#app > div > div > div {
+  + div + div + div {
+    > div + div {
+      > div > div {
+        > div {
+          border-left: 0 !important;
+          border-right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+div[data-radium] {
+  > div > div > div {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+}
+
+div[data-radium] {
+  > div > div.tenant-injected-html + div {
+    > div:first-child {
+      background: transparent !important;
+      border-radius: 0 !important;
+
+      > div:nth-child(2) > div:nth-child(3) > span, > div:nth-child(2) > div:nth-child(3) > div {
+          display: none;
+      }
+
+      div > div,
+      div > div > span {
+        color: $c-beige !important;
+      }
+
+      input {
+        color: $c-beige !important;
+      }
+
+      .Tag {
+        @include tag;
+        color: $c-pink !important;
+        border-color: $c-pink !important;
+      }
+
+      button {
+        background: $c-pink !important;
+        color: $c-white !important;
+        border-radius: 0 !important;
+        border: 5px solid $c-navy !important;
+        height: auto !important;
+        padding: 0.25rem 1rem !important;
+        box-shadow: none !important;
+
+        .icon-search {
+          display: none;
+        }
+
+        span {
+          color: $c-navy !important;
+          text-transform: none !important;
+          font-weight: normal !important;
+          font-size: 1.1rem !important;
+        }
+
+        &:hover {
+          background: $c-beige !important;
+
+          span {
+            color: $c-navy !important;
+            font-family: $fontItalic !important;
+          }
+
+        }
+      }
+
+      label {
+        color: $c-yellow !important;
+      }
+
+      > div {
+
+        &:first-child {
+          font-size: 2rem !important;
+
+          > div {
+            display: none !important;
+          }
+        }
+
+        &:last-child {
+          background: transparent;
+        }
+      }
+
+      > div > div {
+        // display: none !important;
+      }
+
+      + div {
+        > div:not(.EventList--EventListItem) {
+          background: $c-blue !important;
+          display: flex !important;
+          font-size: 1.2rem !important;
+          max-width: 300px;
+          color: $c-beige !important;
+          font-family: $fontLightItalic;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.EventList--EventListItem {
+  background: $c-beige !important;
+  color: $c-black !important;
+  box-shadow: none !important;
+  border: 5px solid $c-beige !important;
+
+  &:hover {
+    border: 5px solid $c-pink !important;
+  }
+
+  > div {
+    div:first-child {
+      color: $c-navy !important;
+    }
+
+    div:nth-child(2) {
+      font-size: 1.1rem !important;
+
+      > div {
+        margin-left: 2rem !important;
+      }
+    }
+  }
+
+  .Tag {
+    display: none !important;
+  }
+
+  .eventive__wishlist-button {
+    > div {
+      > div {
+        display: none !important;
+      }
+    }
+
+    svg {
+      fill: $c-pink !important;
+    }
+  }
+}
+
+div[data-radium] > div > div > div > div > div.tenant-injected-html {
+  p {
+    text-align: left;
+  }
+  + div {
+    > div > a,
+    > div > span > a {
+      font-family: $fontLightItalic !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4),
+#app > div > div > div:nth-child(4) > div > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) {
+  display: none;
+}

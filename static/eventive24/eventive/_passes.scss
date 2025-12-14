@@ -1,0 +1,267 @@
+#passes,
+#ticket-bundles {
+  text-align: left !important;
+  font-size: 2rem !important;
+  color: $c-black;
+  line-height: 0 !important;
+  text-transform: none !important;
+  @include fontBold();
+
+  @include lg {
+    font-size: 3rem !important;
+  }
+}
+
+h2#passes {
+  @include fontBoldSerif;
+  font-size: 3.5rem !important;
+  line-height: 1 !important;
+  margin-top: 2rem !important;
+
+  @include lg() {
+    font-size: 4.5rem !important;
+    line-height: 1 !important;
+  }
+}
+
+#passes + .tenant-injected-html, #passes,
+#ticket-bundles + .tenant-injected-html {
+  margin: 0 !important;
+
+  > br {
+    display: none !important;
+  }
+
+  + div {
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 -1rem !important;
+    box-shadow: none !important;
+
+    > div {
+      background: $c-green !important;
+      padding: 3rem 2rem !important;
+      margin: 1rem !important;
+      color: $c-black !important;
+      text-align: left !important;
+      padding-bottom: 4rem !important;
+      @include borderSm;
+
+      > div:first-child {
+        display: none !important;
+      }
+
+      > h4 {
+        text-align: left !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        margin: 0 0 1.5rem !important;
+        font-size: 2.25rem !important;
+        line-height: 2.5rem !important;
+      }
+
+      button {
+        background: transparent !important;
+
+        > div > div:not(.parallax-content) {
+          background: transparent !important;
+        }
+      }
+
+
+      .tenant-injected-html {
+        p {
+          text-align: left !important;
+          font-family: $font;
+          font-weight: 400 !important;
+          font-size: 1.125rem !important;
+          line-height: 1.75rem !important;;
+          margin-bottom: 3rem !important;
+        }
+
+        + div {
+          text-align: left !important;
+          margin-top: 3rem !important;
+        }
+      }
+    }
+  }
+}
+
+
+#ticket-bundles + .tenant-injected-html {
+  margin: 0 !important;
+
+  > br {
+    display: none !important;
+  }
+
+  + div {
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 -1rem !important;
+
+    > div {
+      &:last-child {
+        background: $c-green !important;
+        color: $c-black !important;
+
+        @include xl() {
+          max-width: 281px;
+        }
+      }
+    }
+
+    + div.tenant-injected-html {
+      max-width: none !important;
+    }
+  }
+}
+
+.Eventive--passes > div:first-child {
+  color: $c-black !important;
+
+  a {
+    color: $c-black !important;
+    text-decoration: underline !important;
+    font-family: $font !important;
+    font-weight: 500 !important;
+  }
+
+}
+
+.Eventive--passes > div + div > div > div {
+  background: transparent;
+  box-shadow: none !important;
+  margin-bottom: 0.5rem;
+
+
+  button {
+    background: $c-black !important;
+    color: $c-white !important;
+    @include borderSm;
+    height: auto !important;
+    box-shadow: none !important;
+    vertical-align: middle;
+    transition: none !important;
+
+    span {
+      vertical-align: 0 !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+      color: $c-white !important;
+
+      @include fontBold;
+
+      &.icon-qrcode,
+      &.icon-cog {
+        font-family: icomoon !important;
+      }
+    }
+
+    span.icon-qrcode,
+    span.icon-cog {
+      display: none !important;
+
+      @include lg {
+        display: inline-block !important;
+      }
+    }
+
+    &:hover {
+      background: $c-blue !important;
+
+      span {
+        color: $c-black !important;
+      }
+
+    }
+
+    > div > div {
+      padding: 0 !important;
+      border: 0 !important;
+      transition: none !important;
+    }
+  }
+}
+
+.eventive__pass-button__button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  @include borderSm;
+  margin-bottom: 2rem !important;
+  border: 1px solid black !important;
+  color: $c-black !important;
+  button {
+    > div > div:not(.parallax-content) {
+      span {
+        font-size: 1.125rem !important;
+        line-height: 1.5rem !important;
+        color: $c-black !important;
+      }
+    }
+  }
+  button:hover {
+    > div > div:not(.parallax-content) {
+      span {
+        font-size: 1.125rem !important;
+        line-height: 1.5rem !important;
+        color: $c-white !important;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $c-black !important;
+    color: $c-white !important;
+
+    button, button:hover {
+      > div > div:not(.parallax-content) {
+        span {
+          font-size: 1.125rem !important;
+          line-height: 1.5rem !important;
+          color: $c-white !important;
+        }
+      }
+    }
+  }
+
+
+  + div {
+    font-size: 1.2rem !important;
+    font-style: normal !important;
+    margin-top: -8rem !important;
+  }
+}
+
+
+.Eventive--tickets--noTickets {
+  button {
+    display: none !important;
+  }
+}
+
+.Eventive--passes,
+.Eventive--tickets {
+  * {
+    box-shadow: none !important;
+  }
+}
+
+.Eventive--passes > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div:nth-child(1),
+.Eventive--passes > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(1) > div:nth-child(1),
+.Eventive--passes > div:nth-child(2) > div:nth-child(4) > div > div > div:nth-child(1) > div:nth-child(1) {
+  @include border;
+  background: $c-black !important;
+}
+
+.Eventive--passes > div:first-child,
+.Eventive--passes--noPasses > div:first-child {
+  font-size: 1.25rem !important;
+  margin-bottom: 4rem !important;
+}
+
+
+.Eventive--passes button > div > div:not(.parallax-content), .Eventive--passes button > button, .Eventive--passes a > div > div:not(.parallax-content), .Eventive--passes a > button {
+  // background: transparent !important;
+}

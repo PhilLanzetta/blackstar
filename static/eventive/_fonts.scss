@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Ostia Antica";
+  font-weight: normal;
+  src: url('fonts/Ostia_Antica_WEB-Regular.woff2') format('woff2'),
+  url('fonts/Ostia_Antica_WEB-Regular.woff') format('woff'),
+  url('fonts/OstiaAntica-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: "Ostia Antica Italic";
+  font-weight: normal;
+  font-style: italic;
+  src: url('fonts/Ostia_Antica_WEB-Italic.woff2') format('woff2'),
+  url('fonts/Ostia_Antica_WEB-Italic.woff') format('woff'),
+  url(fonts/OstiaAntica-Italic.otf) format("opentype");
+}
+@font-face {
+  font-family: "Ostia Antica Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/Ostia_Antica_WEB-Light.woff2') format('woff2'),
+  url('fonts/Ostia_Antica_WEB-Light.woff') format('woff'),
+  url('fonts/OstiaAntica-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "Ostia Antica LightItalic";
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/Ostia_Antica_WEB-Light_Italic.woff2') format('woff2'),
+  url('fonts/Ostia_Antica_WEB-Light_Italic.woff') format('woff'),
+  url(fonts/OstiaAntica-LightItalic.otf) format("opentype");
+}
+
+.font-medium,
+.font-bold {
+  font-weight: normal;
+}

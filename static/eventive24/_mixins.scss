@@ -1,0 +1,92 @@
+@mixin sm {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mdplus {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+@mixin fontItalic {
+  font-family: $font;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin fontLight {
+  font-family: $font;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin fontLightItalic {
+  font-family: $font;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin fontBold {
+  font-family: $font !important;
+  font-weight: 500  !important;
+  font-style: normal;
+  line-height: 1 !important;
+}
+
+@mixin fontBoldSerif {
+  font-family: $fontBoldSerif !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+@mixin border {
+  border: none;
+  border-radius: 1.5rem !important;
+}
+
+@mixin borderSm {
+  border: none;
+  border-radius: 0.5rem !important;
+}
+
+@mixin borderWatch {
+  border: 1px solid $c-white;
+  border-radius: 1.5rem !important;
+}
+
+@mixin borderWatchAlt {
+  border-radius: 1.5rem !important;
+}
+
+@mixin tag {
+
+}

@@ -1,0 +1,54 @@
+.max-w-7xl.mx-auto {
+  .fixed.top-0 {
+    > .rounded-lg {
+      @include border;
+
+      > h2.text-always-gray-800 {
+        color: $c-blue;
+        @include fontLightItalic;
+      }
+
+      .text-always-gray-400.text-sm {
+        @include fontLight;
+      }
+
+      .text-xs.text-always-gray-500.mr-4.leading-tight.text-center {
+        @include fontLight;
+        color: $c-pink;
+      }
+
+      .tenant-injected-html {
+        padding: 0;
+        color: $c-blue;
+      }
+
+      button.border-always-gray-300.bg-always-white,
+      button.shadow-outline-indigo.border-indigo-300.bg-indigo-100 {
+        border-radius: 0 !important;
+        background: $c-navy;
+        box-shadow: none;
+        color: $c-beige;
+        @include border;
+
+        &:hover {
+          background: $c-beige;
+          color: $c-navy;
+        }
+      }
+
+      button.shadow-outline-indigo.border-indigo-300.bg-indigo-100 {
+        background: $c-pink;
+        color: $c-navy;
+        font-size: 1.1rem;
+      }
+
+      #card-element {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        @include border;
+        margin-bottom: 1rem;
+        padding: 0.75rem 0.5rem;
+      }
+    }
+  }
+}

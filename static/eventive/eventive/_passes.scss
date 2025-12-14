@@ -1,0 +1,163 @@
+#passes,
+#ticket-bundles {
+  text-align: left !important;
+  font-weight: normal !important;
+  font-family: $fontLightItalic !important;
+  font-size: 2rem !important;
+}
+
+#passes + .tenant-injected-html,
+#ticket-bundles + .tenant-injected-html {
+  margin: 0 !important;
+
+  > br {
+    display: none !important;
+  }
+
+  + div {
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 -1rem !important;
+
+    > div {
+      border: 0 !important;
+      background: $c-yellow !important;
+      padding: 1rem !important;
+      margin: 1rem !important;
+      color: $c-navy !important;
+      text-align: left !important;
+
+      &:first-child {
+        background: $c-pink !important;
+      }
+
+      &:last-child {
+        background: $c-green !important;
+      }
+
+      > h4 {
+        text-align: left !important;
+        font-weight: normal;
+        text-transform: none !important;
+        margin: 0 !important;
+      }
+
+      .tenant-injected-html {
+        p {
+          text-align: left !important;
+          font-family: $fontLight;
+          font-size: 0.8rem !important;
+        }
+
+        + div {
+          text-align: left !important;
+          margin-top: 3rem !important;
+        }
+      }
+    }
+  }
+}
+
+#ticket-bundles + .tenant-injected-html {
+  margin: 0 !important;
+
+  > br {
+    display: none !important;
+  }
+
+  + div {
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 -1rem !important;
+
+    > div {
+      &:last-child {
+        background: $c-blue !important;
+        color: $c-white !important;
+
+        @include xl() {
+          max-width: 281px;
+        }
+      }
+    }
+
+    + div.tenant-injected-html {
+      max-width: none !important;
+    }
+  }
+}
+
+.Eventive--passes > div:first-child {
+  color: $c-beige !important;
+
+  a {
+    color: $c-pink !important;
+    text-decoration: none !important;
+    font-family: $fontLightItalic !important;
+    font-weight: normal !important;
+  }
+
+}
+
+.Eventive--passes > div + div > div > div{
+  background: $c-beige;
+  margin-bottom: 0.5rem;
+
+
+  button {
+    background: $c-beige !important;
+    color: $c-navy !important;
+    border-radius: 0 !important;
+    border: 5px solid $c-navy !important;
+    height: auto !important;
+    padding: 0.25rem !important;
+    box-shadow: none !important;
+    vertical-align: 2px;
+    transition: none !important;
+
+    @include lg {
+      padding: 0.25rem 1rem !important;
+    }
+
+    span {
+      vertical-align: 0 !important;
+      text-transform: none !important;
+      font-size: 0.8rem !important;
+      font-weight: normal !important;
+
+      @include lg {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    span.icon-qrcode {
+      display: none !important;
+      line-height: 1 !important;
+
+      @include lg {
+        display: inline-block !important;
+      }
+    }
+
+    &:hover {
+      background: $c-pink !important;
+
+      span {
+        color: $c-white !important;
+
+        &.icon-qrcode {
+          font-family: icomoon !important;
+          line-height: 1 !important;
+        }
+      }
+
+    }
+
+    > div > div {
+      background: transparent !important;
+      padding: 0 !important;
+      border: 0 !important;
+      transition: none !important;
+    }
+  }
+}

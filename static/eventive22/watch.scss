@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "watch/colour-pallete";
+@import "watch/tailwind-overrides";
+@import "watch/layout/nav";
+
+html, body {
+  background: $c-purple url("images/mobile-bg@2x.png") top left;
+  background-size: 100% auto;
+  font-family: $font;
+  line-height: 1.75;
+
+  @include md() {
+    background: $c-purple url("images/bg@2x.png") top left;
+    background-size: 100% auto;
+  }
+}
+
+@import "watch/layout/nav";
+@import "watch/layout/single";
+@import "watch/layout/social-shares";
+@import "watch/layout/live";
+@import "watch/layout/modals";
+@import "watch/components/buttons";
+
+.text-gray-100.bg-gray-700 {
+  color: $c-black !important;
+}
+
+.bg-gray-700.p-4.rounded-lg {
+  @include border;
+}
+
+input#search {
+  box-shadow: none !important;
+  @include border;
+}
+
+.h-7.w-7.text-gray-400 {
+  color: $c-purple;
+}
+
+#lookup-form,
+#password-form {
+  align-items: center;
+
+  input[type="email"],
+  input[type="password"] {
+    @include border;
+
+    box-shadow: none !important;
+  }
+
+  .eventive__button {
+    font-size: 1.4rem;
+  }
+}
+
+.mt-6 form.flex {
+  align-items: center;
+
+  #coupon {
+    @include border;
+
+    box-shadow: none !important;
+  }
+
+  .eventive__button {
+    font-size: 1.4rem;
+  }
+}
+
+h2.group {
+  @include fontItalic;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1;
+
+  @include lg {
+    font-size: 4rem;
+  }
+}
+.slick-slider + div.bg-gray-700 {
+  background-color: transparent;
+}
+
+.slick-slider + div.bg-gray-700 > div.bg-gray-700 {
+  @include border;
+  width: 100%;
+  left: 0;
+}
+
+.slick-slider + div.bg-gray-700 > div.relative {
+  padding: 2rem 2rem;
+
+  h2 {
+    @include fontBold;
+    font-size: 2rem;
+  }
+
+  .text-gray-400 {
+    font-weight: 500;
+    color: $c-black;
+  }
+}
+
+.form-checkbox + .tenant-injected-html {
+  padding: 0;
+  font-size: 1rem;
+}

@@ -1,0 +1,132 @@
+.festival-event {
+  @apply select-none text-black relative z-10;
+}
+
+.festival-event__inside {
+  @apply block relative;
+}
+
+.festival-event img {
+  @apply w-full block;
+}
+
+.festival-event__badge {
+  @apply absolute top-5 right-5 rounded-full text-center flex items-center w-20 h-20 block p-1;
+}
+
+.festival-event__inside header {
+  @apply bg-white p-4;
+}
+
+.festival-event__inside__content {
+  @apply block text-sm mt-6;
+}
+
+.festival-event .venue a {
+  @apply flex space-x-2 text-sm md:text-base;
+}
+
+.festival-event .tag {
+  @apply block text-xs mb-0.5;
+}
+
+.festival-event .venue img {
+  @apply w-5 h-auto block;
+}
+
+.festival-event--festival {
+  @apply font-festival_sans max-w-sm;
+}
+
+.festival-event--festival .venue {
+  @apply font-light;
+}
+
+.festival-event--festival .tag {
+  @apply font-festival_sans_light_italic;
+}
+
+.festival-event--festival .festival-event__inside {
+  @apply border-5 border-navy bg-navy;
+}
+
+.festival-event--festival .festival-event__inside header {
+  @apply border-navy border-t-5;
+}
+
+.festival-event--festival .festival-event__inside header h2 {
+  @apply font-festival_sans_light_italic text-xs mb-2;
+}
+
+.festival-event--festival .festival-event__inside header time {
+  @apply block text-sm md:text-base xl:text-xl font-festival_sans_italic;
+}
+
+.festival-event--festival .festival-event__inside__content {
+  @apply font-light;
+}
+
+.festival-event--festival .festival-event__badge {
+  @apply bg-blue text-white text-xs transform rotate-12;
+}
+
+.festival-event--bsf11 .aspect-cover-img {
+  @apply rounded-3xl lg:rounded-4xl border-4 lg:border-md 2xl:border-lg -mx-border-4 lg:-mx-border-md 2xl:-mx-border-lg -mt-border-4 lg:-mt-border-md 2xl:-mt-border-lg border-transparent overflow-hidden;
+}
+
+.festival-event--bsf11 .aspect-cover-img::before {
+  padding-top: 75%;
+}
+
+.festival-event--bsf11 {
+  @apply rounded-3xl lg:rounded-4xl border-4 lg:border-md 2xl:border-lg border-black bg-white;
+}
+
+.festival-event--bsf11 .festival-event__inside header {
+  @apply p-6 pb-0 relative;
+}
+
+.festival-event--bsf11 .festival-event__inside__content {
+  @apply px-6 py-0;
+}
+
+.festival-event--bsf11 footer {
+  @apply p-6 pt-0;
+}
+
+.festival-event--bsf11 .tag {
+  @apply font-bsf11_sans text-xl xl:text-2xl;
+}
+
+.festival-event--bsf11 .festival-event__inside header h1 {
+  @apply font-bsf11_sans text-5xl;
+}
+
+.festival-event--bsf11 .festival-event__inside header h2 {
+  @apply font-bsf11_sans text-2xl;
+}
+
+.festival-event--bsf11 .festival-event__inside header time {
+  @apply font-bsf11_sans md:font-bsf11_cursive text-2xl 2xl:text-3xl uppercase leading-none;
+}
+
+.festival-event--bsf11 .venue a {
+  @apply text-xs xl:text-sm flex items-center flex-row-reverse;
+}
+
+.festival-event--bsf11 .venue a img {
+  @apply ml-2;
+}
+
+.festival-event--bsf11 .festival-event__badge svg {
+  @apply block w-full h-full absolute top-0 left-0 z-0;
+}
+
+.festival-event--bsf11 .festival-event__badge {
+  @apply p-0 block w-28 h-28;
+}
+
+.festival-event--bsf11 .festival-event__badge span {
+  @apply block flex w-full h-full text-center items-center justify-center relative z-10 font-bsf11_sans leading-none p-6 text-xl;
+}
+

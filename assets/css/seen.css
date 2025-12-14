@@ -1,0 +1,289 @@
+
+@font-face {
+  font-family: "BradfordLLWeb-BlackItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-BlackItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-LightItalic";
+  src: url("~assets/fonts/BradfordLLWeb-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-LightItalic";
+  src: url("~assets/fonts/BradfordLLWeb-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Medium";
+  src: url("~assets/fonts/BradfordLLWeb-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Medium";
+  src: url("~assets/fonts/BradfordLLWeb-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-BookItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BookItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-BookItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BookItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Light";
+  src: url("~assets/fonts/BradfordLLWeb-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Light";
+  src: url("~assets/fonts/BradfordLLWeb-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-BoldItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-BoldItalic";
+  src: url("~assets/fonts/BradfordLLWeb-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-ExtraBoldItalic";
+  src: url("~assets/fonts/BradfordLLWeb-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-ExtraBoldItalic";
+  src: url("~assets/fonts/BradfordLLWeb-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Italic";
+  src: url("~assets/fonts/BradfordLLWeb-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Italic";
+  src: url("~assets/fonts/BradfordLLWeb-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-MediumItalic";
+  src: url("~assets/fonts/BradfordLLWeb-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-MediumItalic";
+  src: url("~assets/fonts/BradfordLLWeb-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-ExtraBold";
+  src: url("~assets/fonts/BradfordLLWeb-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-ExtraBold";
+  src: url("~assets/fonts/BradfordLLWeb-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Regular";
+  src: url("~assets/fonts/BradfordLLWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Regular";
+  src: url("~assets/fonts/BradfordLLWeb-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Black";
+  src: url("~assets/fonts/BradfordLLWeb-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Black";
+  src: url("~assets/fonts/BradfordLLWeb-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Book";
+  src: url("~assets/fonts/BradfordLLWeb-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Book";
+  src: url("~assets/fonts/BradfordLLWeb-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Bold";
+  src: url("~assets/fonts/BradfordLLWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLWeb-Bold";
+  src: url("~assets/fonts/BradfordLLWeb-Bold.woff2") format("woff2");
+}
+
+
+/* subset */
+
+@font-face {
+  font-family: "BradfordLLSub-BlackItalic";
+  src: url("~assets/fonts/BradfordLLSub-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-BlackItalic";
+  src: url("~assets/fonts/BradfordLLSub-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-LightItalic";
+  src: url("~assets/fonts/BradfordLLSub-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-LightItalic";
+  src: url("~assets/fonts/BradfordLLSub-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Medium";
+  src: url("~assets/fonts/BradfordLLSub-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Medium";
+  src: url("~assets/fonts/BradfordLLSub-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-BookItalic";
+  src: url("~assets/fonts/BradfordLLSub-BookItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-BookItalic";
+  src: url("~assets/fonts/BradfordLLSub-BookItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Light";
+  src: url("~assets/fonts/BradfordLLSub-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Light";
+  src: url("~assets/fonts/BradfordLLSub-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-BoldItalic";
+  src: url("~assets/fonts/BradfordLLSub-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-BoldItalic";
+  src: url("~assets/fonts/BradfordLLSub-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-ExtraBoldItalic";
+  src: url("~assets/fonts/BradfordLLSub-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-ExtraBoldItalic";
+  src: url("~assets/fonts/BradfordLLSub-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Italic";
+  src: url("~assets/fonts/BradfordLLSub-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Italic";
+  src: url("~assets/fonts/BradfordLLSub-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-MediumItalic";
+  src: url("~assets/fonts/BradfordLLSub-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-MediumItalic";
+  src: url("~assets/fonts/BradfordLLSub-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-ExtraBold";
+  src: url("~assets/fonts/BradfordLLSub-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-ExtraBold";
+  src: url("~assets/fonts/BradfordLLSub-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Regular";
+  src: url("~assets/fonts/BradfordLLSub-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Regular";
+  src: url("~assets/fonts/BradfordLLSub-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Black";
+  src: url("~assets/fonts/BradfordLLSub-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Black";
+  src: url("~assets/fonts/BradfordLLSub-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Book";
+  src: url("~assets/fonts/BradfordLLSub-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Book";
+  src: url("~assets/fonts/BradfordLLSub-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Bold";
+  src: url("~assets/fonts/BradfordLLSub-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BradfordLLSub-Bold";
+  src: url("~assets/fonts/BradfordLLSub-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gallique Light";
+  font-weight: normal;
+  src: url("~assets/fonts/Gallique-Light.woff") format("woff");
+}

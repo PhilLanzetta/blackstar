@@ -1,0 +1,297 @@
+.Films--film_container {
+  a {
+    box-shadow: none !important;
+    margin: 0.25rem !important;
+    @include lg {
+      margin: 1em !important;
+    }
+    div {
+      box-shadow: none !important;
+    }
+    > div > div {
+      background: transparent !important;
+      border: 0 !important;
+      color: $c-black !important;
+      box-shadow: none !important;
+    }
+
+    > div {
+      @include borderSm;
+      background-color: $c-black;
+      overflow: hidden;
+    }
+
+    &:hover {
+      > div > div {
+        background: transparent !important;
+        border: 0 !important;
+
+        span {
+          color: $c-black !important;
+          font-family: $font !important;
+        }
+      }
+    }
+  }
+}
+
+.Films--film_filter_editor {
+  overflow: hidden;
+  div {
+    border-radius: 0 !important;
+  }
+
+  > div {
+    &:first-child {
+      background: $c-yellow !important;
+      color: $c-black !important;
+      border-radius: 30px !important;
+      box-shadow: none !important;
+      border: none !important;
+
+      input {
+        background: $c-yellow !important;
+        color: $c-black !important;
+      }
+
+      svg {
+        fill: $c-black !important;
+      }
+    }
+  }
+}
+
+
+.Films--film_filter_editor--tags {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+.Films--film_container {
+  a {
+    background: $c-yellow;
+    @include border;
+    .parallax {
+      flex-shrink: 0;
+      transform: none !important;
+      div {
+        transform: none !important;
+      }
+    }
+
+    .parallax-content {
+      @include borderSm;
+      overflow: hidden;
+      transform: none !important;
+    }
+
+    > div:not(.parallax) {
+      border-radius: 0 !important;
+      padding: 1rem !important;
+      background-color: transparent !important;
+
+      h1 {
+        color: $c-black !important;
+        font-family: $font;
+        font-weight: normal;
+      }
+
+      h2 {
+        color: $c-black !important;
+        font-family: $font;
+        font-weight: normal;
+      }
+
+      .Tag {
+        @include tag;
+      }
+    }
+  }
+/*
+  .parallax .parallax-front {
+    background: $c-blue !important;
+    height: auto !important;
+    width: auto !important;
+    top: auto !important;
+    bottom: 1rem !important;
+    text-shadow: none !important;
+    color: $c-black !important;
+    text-align: left !important;
+    left: 1rem !important;
+    right: 1rem !important;
+
+    h1 {
+      padding: 1rem 0.25rem 0.25rem !important;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.1rem;
+    }
+
+    > div {
+      top: 2px !important;
+      right: 0 !important;
+    }
+
+    svg {
+      fill: $c-black !important;
+    }
+  }*/
+
+  a {
+    &:hover {
+      .parallax .parallax-front {
+        background: rgba(0,0,0,0.5) !important;
+        color: $c-beige !important;
+
+        svg {
+          fill: $c-beige !important;
+        }
+      }
+    }
+  }
+}
+
+.FilmCard {
+  h2 {
+    font-family: $font !important;
+    color: $c-black !important;
+    font-weight: normal !important;
+  }
+
+  .tenant-injected-html {
+    p {
+      text-align: left;
+      color: $c-black;
+    }
+
+    + div + div {
+      background: $c-black !important;
+      color: $c-beige !important;
+      padding: 1rem !important;
+      border: 0 !important;
+      @include borderWatchAlt;
+
+      a {
+        color: $c-beige !important;
+        font-family: $font !important;
+      }
+    }
+  }
+
+  button[type=button] {
+    background: $c-black !important;
+    color: $c-beige !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    min-height: 40px !important;
+    padding: 0.25rem 1rem !important;
+    box-shadow: none !important;
+    @include borderWatchAlt;
+
+
+    span {
+      color: $c-beige !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+
+      @include lg {
+        font-size: 1.25rem !important;
+      }
+    }
+
+    svg {
+      fill: $c-beige !important;
+    }
+
+    &:hover {
+      background: $c-blue !important;
+      color: $c-black !important;
+
+      span {
+        color: $c-black !important;
+      }
+
+      svg {
+        fill: $c-black !important;
+      }
+    }
+  }
+}
+
+.FilmCard {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-black !important;
+    }
+  }
+
+  div > div {
+    ul {
+      li {
+        margin-bottom: 1rem !important;
+        div {
+          color: $c-black !important;
+        }
+        div:first-child {
+          color: $c-black !important;
+          font-family: $font;
+          font-style: normal !important;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  + div {
+    > div > a,
+    > div > span > a {
+      font-family: $font !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.eventive__ticket-button__container {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-black !important;
+    }
+  }
+}
+
+div[role="menu"] a > div > div:not(.parallax-content) {
+  background: transparent !important;
+  color: #1a243b !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  height: auto !important;
+  padding: 0 24px !important;
+  box-shadow: none !important;
+  line-height: 1.75 !important;
+}
+
+.blackstar-skin-helper-films:not(.blackstar-skin-helper-parent) #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div.Eventive--ModeSwitcher--film-guide {
+  border: none !important;
+}
+
+.blackstar-skin-helper-films:not(.blackstar-skin-helper-parent) #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div.FilmPage {
+  background: $c-yellow !important;
+}
+
+.blackstar-skin-helper-schedule:not(.blackstar-skin-helper-parent):not(.blackstar-skin-helper-quick):not(.blackstar-skin-helper-tickets),
+.blackstar-skin-helper-films:not(.blackstar-skin-helper-parent) {
+  #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div.FilmPage > div > div:nth-child(2) > div:nth-child(2) > div > div {
+    background: $c-yellowDark !important;
+  }
+}
+
+@include mdplus {
+
+  .FilmPage > div > div:nth-child(2) > div > div {
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+    overflow: hidden;
+  }
+
+}

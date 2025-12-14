@@ -1,0 +1,40 @@
+.eventive__button {
+  @include border;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  @include fontBold;
+  text-transform: capitalize;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  svg {
+    display: none;
+  }
+
+  &.bg-indigo-600 {
+    background: $c-pink;
+    color: $c-navy;
+
+    &:hover {
+      background: $c-white;
+      color: $c-navy;
+    }
+
+    &:focus {
+      border-color: $c-yellow;
+    }
+  }
+
+  &.bg-reverse,
+  &.bg-indigo-400 {
+    background: $c-beige;
+    color: $c-navy;
+
+    &:hover {
+      background: $c-pink;
+      color: $c-navy;
+    }
+  }
+}

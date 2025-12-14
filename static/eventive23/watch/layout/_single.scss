@@ -1,0 +1,222 @@
+nav + header {
+  h2.text-gray-400, h3.text-white {
+    color: $c-black;
+  }
+
+  h2, h3 {
+    font-weight: normal !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+
+    @include lg {
+      font-size: 3rem !important;
+    }
+  }
+}
+
+.scrollbarred {
+  background: $c-black;
+  padding-left: 1.25rem;
+
+  &.pr-2 {
+    padding-left: 0.5rem;
+  }
+
+  .block.shadow.shadow-outline-gray {
+    background: $c-yellow;
+
+    .inline-flex.rounded-full.text-red-800.bg-red-100 {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      color: $c-yellow;
+      font-weight: normal;
+      font-family: $font;
+      border-bottom: 2px solid $c-yellow;
+    }
+  }
+
+  .font-semibold {
+    font-weight: normal !important;
+  }
+
+  > a {
+   @include border;
+    background: $c-yellow !important;
+    color: $c-black !important;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    font-weight: normal !important;
+
+    &:hover {
+      background: $c-beige !important;
+      color: $c-black !important;
+    }
+  }
+
+  .text-sm {
+    @include  fontLight;
+    color: $c-black !important;
+  }
+}
+
+.tenant-injected-html {
+  padding: 2rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+
+  @include lg {
+    font-size: 1.2rem;
+  }
+}
+
+ul li {
+  margin-bottom: 1.5rem;
+
+  .text-gray-400.leading-5.mt-3.uppercase.text-xs {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    @include fontItalic;
+    color: $c-black !important;
+    text-transform: none !important;
+
+    + div.text-gray-300 {
+      @include fontLight;
+      font-size: 1rem;
+    }
+  }
+}
+
+.rounded-full.inline-flex.bg-gray-700 {
+  + span {
+    > span {
+      color: $c-yellow;
+      border-bottom: 2px solid $c-yellow;
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      font-size: 1rem;
+      min-height: 0 !important;
+    }
+  }
+}
+
+.mb-5.text-gray-300.text-sm.flex.items-center {
+  a.underline {
+    text-decoration: none;
+  }
+}
+
+.rounded-full.inline-flex.bg-gray-700:not(.whitespace-no-wrap) {
+  background: $c-yellow;
+  color: $c-beige;
+  font-size: 2rem;
+  padding: 1rem;
+  min-height: 90px !important;
+  @include border;
+}
+
+.rounded-full.inline-flex.bg-gray-700.whitespace-no-wrap {
+  color: $c-black;
+  border-bottom: 2px solid $c-black;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  min-height: 0 !important;
+}
+
+.rounded-t-lg.overflow-hidden.top-0.left-0.right-0 {
+  background: $c-yellow !important;
+
+  .text-always-white {
+    color: $c-black;
+
+    &:not(.font-bold) {
+      font-weight: normal !important;
+    }
+  }
+}
+
+.slider-down-background + div {
+  bottom: -0.5rem;
+}
+
+.absolute.bottom-2.left-0.right-0.flex.justify-center.z-10 {
+  justify-content: flex-start;
+
+  span {
+    &.bg-gray-300.text-gray-800 {
+      color: $c-black;
+      background: transparent;
+      border-radius: 0;
+      padding: 1rem 2rem 0;
+      font-size: 1.2rem;
+      @include fontItalic;
+    }
+  }
+}
+
+.mb-4.border.border-gray-600.bg-gray-700.rounded.p-4 {
+  border: none;
+  text-align: center !important;
+
+  .ml-4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include fontLight;
+  padding: 0.5rem 1rem;
+
+  svg {
+    display: none;
+  }
+}
+
+.inline-flex.mr-1.items-center.rounded-full.text-xs.font-medium.leading-4.bg-green-200.text-green-800 {
+  color: $c-black !important;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  font-size: 2rem;
+  @include fontBold;
+
+  + .flex-1 {
+    color: $c-black !important;
+  }
+}
+
+.relative.flex-1.flex.flex-col.min-h-55vw {
+  @include border;
+}
+
+.hidden.mt-6.border-gray-600.px-4,
+.mt-6.border-gray-600.px-6 {
+  padding-left: 0;
+  padding-right: 0;
+
+  > div {
+    @include border;
+    background: $c-white;
+    padding: 2rem;
+  }
+}
+
+.mt-6.border-gray-600.px-6 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.mt-12.px-4.sticky.top-0 {
+  > div.relative.pb-6 {
+    .absolute.h-6.w-4.z-10.bg-gray-800 {
+      display: none !important;
+    }
+  }
+}

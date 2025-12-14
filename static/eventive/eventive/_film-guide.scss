@@ -1,0 +1,229 @@
+.Films--film_container {
+  a {
+    > div > div {
+      background: transparent !important;
+      border: 0 !important;
+      padding: 0 !important;
+    }
+
+    &:hover {
+      > div > div {
+        background: transparent !important;
+        border: 0 !important;
+        padding: 0 !important;
+
+        span {
+          color: $c-navy !important;
+          font-family: $fontLight !important;
+        }
+      }
+    }
+  }
+}
+
+.Films--film_filter_editor {
+  div {
+    border-radius: 0 !important;
+  }
+
+  > div {
+    &:first-child {
+      background: $c-blue !important;
+      color: $c-white !important;
+
+      input {
+        background: $c-blue !important;
+        color: $c-white !important;
+      }
+
+      svg {
+        fill: $c-white !important;
+      }
+    }
+  }
+}
+
+.Films--film_filter_editor--tags {
+  background: $c-navy !important;
+  box-shadow: none !important;
+
+  .Tag {
+    @include tag;
+    color: $c-yellow !important;
+    border-color: $c-yellow !important;
+    margin-right: 1rem !important;
+  }
+}
+
+.Films--film_container {
+
+  a {
+    transform: none !important;
+
+    div {
+      transform: none !important;
+    }
+
+    > div:not(.parallax) {
+      border-radius: 0 !important;
+      padding: 1rem !important;
+      background-color: transparent !important;
+
+      h1 {
+        color: $c-blue !important;
+        font-family: $fontLightItalic;
+        font-weight: normal;
+      }
+
+      h2 {
+        color: $c-pink !important;
+        font-family: $fontLight;
+        font-weight: normal;
+      }
+
+      .Tag {
+        @include tag;
+      }
+    }
+  }
+
+  .parallax .parallax-front {
+    background: $c-yellow !important;
+    height: auto !important;
+    width: auto !important;
+    top: auto !important;
+    bottom: 0 !important;
+    text-shadow: none !important;
+    color: $c-navy !important;
+    text-align: left !important;
+    border: 5px solid $c-navy;
+
+    h1 {
+      padding: 1rem 1rem 0.25rem !important;
+      font-size: 1.1rem;
+      font-weight: normal;
+      line-height: 1.1rem;
+    }
+
+    > div {
+      top: 2px !important;
+      right: 0 !important;
+    }
+  }
+
+  a {
+    &:hover {
+      .parallax .parallax-front {
+        background: $c-pink !important;
+      }
+    }
+  }
+}
+
+.FilmCard {
+  .Tag {
+    @include tag;
+  }
+
+  h2 {
+    font-family: $fontLightItalic !important;
+    color: $c-pink !important;
+    font-weight: normal !important;
+  }
+
+  .tenant-injected-html {
+    p {
+      text-align: left;
+      color: $c-navy;
+    }
+
+    + div + div {
+      background: $c-beige !important;
+      color: $c-navy !important;
+      padding: 1rem !important;
+      border: 5px solid $c-navy !important;
+
+      a {
+        color: $c-blue !important;
+        font-family: $fontLightItalic !important;
+      }
+    }
+  }
+
+  button[type=button] {
+    background: $c-pink !important;
+    color: $c-navy !important;
+    border-radius: 0 !important;
+    border: 5px solid $c-navy !important;
+    min-height: 40px !important;
+    padding: 0.25rem 1rem !important;
+    box-shadow: none !important;
+
+
+    span {
+      color: $c-navy !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+
+      @include lg {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    &:hover {
+      span {
+        color: $c-white !important;
+      }
+    }
+  }
+}
+
+.FilmCard {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-pink !important;
+    }
+  }
+
+  div > div {
+    ul {
+      li {
+        margin-bottom: 1rem !important;
+        div {
+          color: $c-navy !important;
+        }
+        div:first-child {
+          color: $c-blue !important;
+          font-family: $fontLightItalic;
+        }
+      }
+    }
+  }
+
+  + div {
+    > div > a,
+    > div > span > a {
+      font-family: $fontLightItalic !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.eventive__ticket-button__container {
+  .eventive__wishlist-button {
+    svg {
+      fill: $c-pink !important;
+    }
+  }
+}
+
+div[role="menu"] a > div > div:not(.parallax-content) {
+  background: transparent !important;
+  color: #1a243b !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  height: auto !important;
+  padding: 0 24px !important;
+  box-shadow: none !important;
+  line-height: 1.75 !important;
+}

@@ -1,0 +1,14 @@
+.color-palette-black {
+  --color-palette-gray-900: $c-black; // Background color for “Catalog”, “Live Streams”, “Need Help?” and other watch site catalog top row buttons when selected
+  --color-palette-gray-800: $c-black; // Screening package text (“1 film in package”) on virtual screening page, watch site catalog Display Sections slider arrow button color
+  --color-palette-gray-800-transparent: rgba(0, 0, 0, 0); // Transparent gradients
+  --color-palette-gray-700: $c-white; // Background color of catalog welcome note, virtual screening page short description, virtual screening page price, virtual screening page watch and unlock window intervals
+  --color-palette-gray-700-transparent: #25252500; //Transparent overlay on some typically white text
+  --color-palette-gray-600: #43434f;// Outline of the short description text box on a virtual screening page
+  --color-palette-gray-500: #575757;// ?
+  --color-palette-gray-400: $c-black;// Watch site catalog Display Sections slider arrow button color, background color of login circle button, event bucket text on virtual screening page, production credit headings text on virtual screening page
+  --color-palette-gray-300: $c-black;// Virtual screening page non-title text, “Catalog” and other watch site catalog top row button text, production credit names text, background of screening package info
+  --color-palette-gray-200: $c-black;// Virtual screening page non-title text, “Catalog” and other watch site catalog top row button text, production credit names text, description text of films on the watch site catalog when using “Default” view for the tag’s display section
+  --color-palette-gray-100: $c-black;// Watch site catalog welcome note text, virtual screening page price text, virtual screening page watch and unlock window interval text
+  --color-palette-white: $c-black;// white text on virtual screening pages, watch site catalogue tag/display section text, background of watch site catalog top row buttons when hovering
+}

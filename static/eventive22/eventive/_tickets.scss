@@ -1,0 +1,101 @@
+.Eventive--tickets {
+  background: $c-blue;
+  color: $c-white;
+
+  > div {
+    color: $c-white !important;
+  }
+
+  > div {
+    background: $c-beige;
+
+    &:first-child {
+      background: transparent;
+    }
+  }
+
+  svg + div > div {
+    div:last-child {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  input {
+    color: $c-white !important;
+  }
+
+  button {
+    background: $c-beige !important;
+    color: $c-navy !important;
+    border-radius: 0 !important;
+    border: 5px solid $c-navy !important;
+    height: auto !important;
+    padding: 0.25rem !important;
+    box-shadow: none !important;
+    vertical-align: 2px;
+    transition: none !important;
+
+    @include lg {
+      padding: 0.25rem 1rem !important;
+    }
+
+    span {
+      vertical-align: 0 !important;
+      text-transform: none !important;
+      font-size: 0.8rem !important;
+      font-weight: normal !important;
+
+      @include lg {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    span.icon-qrcode {
+      display: none !important;
+      line-height: 1 !important;
+
+      @include lg {
+        display: inline-block !important;
+      }
+    }
+
+    &:hover {
+      background: $c-pink !important;
+
+      span {
+        color: $c-white !important;
+
+        &.icon-qrcode {
+          font-family: icomoon !important;
+          line-height: 1 !important;
+        }
+      }
+
+    }
+
+    > div > div {
+      background: transparent !important;
+      padding: 0 !important;
+      border: 0 !important;
+      transition: none !important;
+    }
+  }
+
+  &.Eventive--tickets--hasTickets {
+    > div + div > div + div > div > div > div > div {
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      margin-right: 0.1rem;
+
+      @include lg {
+        margin-right: 0.5rem;
+
+      }
+    }
+    > div + div > div > div > div > div + div + div {
+      margin-bottom: 0.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.rounded,
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-b-lg,
+.rounded-t-lg {
+  border-radius: 0 !important;
+}
+
+.slider-up-background,
+.slider-down-background {
+  display: none;
+}
+
+body .border-gray-700 {
+  border-color: $c-black;
+}

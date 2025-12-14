@@ -1,0 +1,94 @@
+nav.bg-gray-800 {
+  background: $c-yellow;
+  color: $c-black;
+  @include lg {
+    padding: 1rem 0.5rem;
+  }
+
+  a {
+    color: $c-black;
+    background: transparent;
+    font-size: 1.1rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: transparent;
+    }
+  }
+
+  .border-b {
+    border: none;
+  }
+
+  .eventive__logo-container__logo {
+    width: 80px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+
+    @include lg {
+      width: 120px !important;
+      max-width: none !important;
+    }
+  }
+
+  button {
+    background: $c-white;
+    color: $c-black;
+    border-radius: 0;
+    margin-right: 0.5rem;
+    @include fontBold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    @include border;
+  }
+
+  button.max-w-xs.flex.items-center.text-sm.rounded-full {
+    background: transparent;
+    border: none !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none !important;
+    }
+
+    > span {
+      background: $c-black;
+    }
+  }
+
+  .origin-top-right {
+    .rounded-md.bg-always-white {
+      background: $c-beige;
+
+      .text-always-gray-500 {
+        color: $c-black;
+      }
+
+      .text-always-gray-400 {
+        color: $c-black;
+      }
+      a {
+        font-size: 1rem;
+
+        &:hover {
+          color: $c-black;
+        }
+      }
+    }
+  }
+
+  .inline-flex.items-center.justify-center.h-10.w-10.rounded-full.bg-gray-400 {
+    background: $c-black;
+  }
+
+  div.text-gray-400 {
+    color: $c-black;
+  }
+}
+
+.bg-gray-800.pb-32 {
+  background: transparent;
+}

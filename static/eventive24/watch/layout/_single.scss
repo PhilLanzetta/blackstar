@@ -1,0 +1,278 @@
+nav + header {
+  h2.text-gray-400 {
+    color: $c-white;
+    font: $font;
+    font-weight: 300 !important;
+    margin-bottom: 1rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  h3.text-white {
+    color: $c-white;
+    font-family: $fontBoldSerif;
+    font-weight: normal;
+    text-transform: uppercase;
+    max-width: 650px;
+    line-height: 1 !important;
+    font-size: 2rem !important;
+
+    @include lg {
+      font-size: 3.75rem !important;
+    }
+  }
+
+  h2, h3 {
+    font-weight: normal !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+
+    @include lg {
+      font-size: 3rem !important;
+    }
+  }
+}
+
+.scrollbarred {
+  background: $c-black;
+  padding-left: 1.25rem;
+
+  &.pr-2 {
+    padding-left: 0.5rem;
+  }
+
+  .block.shadow.shadow-outline-gray {
+    @include borderWatch;
+
+    .inline-flex.rounded-full.text-red-800.bg-red-100 {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      color: $c-blue;
+      font-weight: normal;
+      font-family: $font;
+      border-bottom: 2px solid $c-blue;
+    }
+  }
+
+  .font-semibold {
+    font-weight: normal !important;
+  }
+
+  > a {
+    @include borderWatch;
+    background: $c-black !important;
+    color: $c-white !important;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    font-weight: normal !important;
+
+    &:hover {
+      background: $c-beige !important;
+      color: $c-black !important;
+    }
+  }
+
+  .text-sm {
+    @include fontLight;
+ //   color: $c-black !important;
+  }
+}
+
+.tenant-injected-html {
+  padding: 2rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+
+  @include lg {
+    font-size: 1.2rem;
+  }
+}
+
+ul li {
+  margin-bottom: 1.5rem;
+
+  .text-gray-400.leading-5.mt-3.uppercase.text-xs {
+    margin-bottom: 0.5rem;
+
+    @include lg {
+      font-size: 1.2rem;
+    }
+
+    @include fontLight;
+    color: $c-white !important;
+    text-transform: none !important;
+
+    + div.text-gray-300 {
+      font-weight: normal;
+
+      @include lg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.rounded-full.inline-flex.bg-gray-700 {
+  + span {
+    > span {
+      color: $c-blue;
+      border-bottom: 2px solid $c-blue;
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      font-size: 1rem;
+      min-height: 0 !important;
+    }
+  }
+}
+
+.mb-5.text-gray-300.text-sm.flex.items-center {
+  a.underline {
+    text-decoration: none;
+  }
+}
+
+.rounded-full.inline-flex.bg-gray-700:not(.whitespace-no-wrap) {
+  background: $c-green !important;
+  color: $c-black !important;
+  font-size: 2rem;
+  padding: 1rem;
+  min-height: 90px !important;
+  @include border;
+}
+
+.rounded-full.inline-flex.bg-gray-700.whitespace-no-wrap {
+  color: $c-green;
+  border-bottom: 2px solid $c-green;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  min-height: 0 !important;
+}
+
+.rounded-t-lg.overflow-hidden.top-0.left-0.right-0 {
+  background: $c-blue !important;
+
+  .text-always-white {
+    color: $c-black;
+
+    &:not(.font-bold) {
+      font-weight: normal !important;
+    }
+  }
+}
+
+.slider-down-background + div {
+  bottom: -0.5rem;
+
+  @include lg {
+    bottom: -2rem;
+  }
+}
+
+.absolute.bottom-2.left-0.right-0.flex.justify-center.z-10 {
+  justify-content: center;
+
+  span {
+    &.bg-gray-300.text-gray-800 {
+      color: $c-black;
+      background: $c-blue !important;
+      border-radius: 0;
+      @include lg {
+        padding: 1rem 2rem 0.75rem;
+        font-size: 1.2rem;
+        margin: 2rem auto 0;
+      }
+      line-height: 1;
+      display: block !important;
+      @include fontItalic;
+    }
+  }
+}
+
+.mb-4.border.border-gray-600.bg-gray-700.rounded.p-4 {
+  border: none;
+  text-align: center !important;
+
+  .ml-4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include fontLight;
+  padding: 0.5rem 1rem;
+  background: $c-blue;
+  @include borderWatchAlt;
+  color: $c-black;
+
+  svg {
+    display: none;
+  }
+}
+
+.inline-flex.mr-1.items-center.rounded-full.text-xs.font-medium.leading-4.bg-green-200.text-green-800 {
+  color: $c-black !important;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  font-size: 1rem;
+  @include fontBold;
+
+  + .flex-1 {
+    color: $c-black !important;
+  }
+}
+
+.relative.flex-1.flex.flex-col.min-h-55vw {
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+}
+
+.hidden.mt-6.border-gray-600.px-4,
+.mt-6.border-gray-600.px-6 {
+  padding-left: 0;
+  padding-right: 0;
+
+  > div {
+    background: $c-black;
+    @include borderWatch;
+    padding: 2rem;
+  }
+}
+
+.mt-6.border-gray-600.px-6 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.mt-12.px-4.sticky.top-0 {
+  > div.relative.pb-6 {
+    .absolute.h-6.w-4.z-10.bg-gray-800 {
+      display: none !important;
+    }
+  }
+}
+
+#__next > div:nth-child(1) > main > div > div > div.sm\:w-2\/3.px-4 > div.hidden.sm\:block.mt-6.border-gray-600.px-4 > div > div.text-sm.text-gray-400.sm\:flex.items-center.mb-5,
+#__next > div:nth-child(1) > main > div > div > div.sm\:hidden.mt-6.border-gray-600.px-6 > div > div.text-sm.text-gray-400.sm\:flex.items-center.mb-5 {
+  background: $c-blue;
+  @include borderWatchAlt;
+  color: $c-black;
+  padding: 0.75rem 2rem;
+  margin: 0 -0.9rem 2rem;
+
+  .font-semibold {
+    font-weight: normal !important;
+  }
+}
+
+#__next > div:nth-child(1) > main > div > div > div.sm\:hidden.mt-6.border-gray-600.px-6 > div > div.text-sm.text-gray-400.sm\:flex.items-center.mb-5 {
+  margin: 0 -0.5rem 1rem;
+}

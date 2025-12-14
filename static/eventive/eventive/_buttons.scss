@@ -1,0 +1,109 @@
+button, a {
+  border-radius: 0 !important;
+  font-family: $font !important;
+  height: auto !important;
+  box-shadow: none !important;
+  line-height: 1.75 !important;
+  border: 0 !important;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  > div > div:not(.parallax-content),
+  > button {
+    background: $c-beige !important;
+    color: $c-navy !important;
+    border-radius: 0 !important;
+    border: 5px solid $c-navy !important;
+    height: auto !important;
+    padding: 0.25rem 1rem !important;
+    box-shadow: none !important;
+    line-height: 1.75 !important;
+    font-family: $font !important;
+
+    span {
+      color: $c-navy !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+      vertical-align: 0 !important;
+
+      @include lg {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    span:not(.icon-*) {
+      font-family: $font !important;
+    }
+
+    &:hover {
+      font-family: $fontLightItalic !important;
+    }
+  }
+
+  &:hover {
+    > div > div:not(.parallax-content),
+    > button {
+      background: $c-pink !important;
+
+      span {
+        color: $c-white !important;
+      }
+
+      span:not(.icon-*) {
+        font-family: $fontItalic !important;
+
+      }
+    }
+  }
+}
+
+button[disabled], div[data-reactroot] >  div > div > div > div > div + div > p + div > button {
+  border-radius: 0 !important;
+  font-family: $font !important;
+  height: auto !important;
+  box-shadow: none !important;
+  line-height: 1.75 !important;
+  border: 0 !important;
+  opacity: 0.5 !important;
+
+
+  > div  {
+    background: $c-beige !important;
+    color: $c-navy !important;
+    border-radius: 0 !important;
+    border: 5px solid $c-navy !important;
+    height: auto !important;
+    padding: 0.25rem 1rem !important;
+    box-shadow: none !important;
+    line-height: 1.75 !important;
+
+
+    span {
+      color: $c-navy !important;
+      text-transform: none !important;
+      font-weight: normal !important;
+      vertical-align: 0 !important;
+
+      @include lg {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
+
+}
+
+div[data-reactroot] >  div > div > div > div > div + div > p + div > button {
+  opacity: 1 !important;
+  margin-left: 1rem !important;
+  vertical-align: 2px !important;
+
+}
+
+.eventive__wishlist-button {
+  > div > div {
+    display: none !important;
+  }
+}
+

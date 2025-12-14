@@ -1,0 +1,19 @@
+#__next > div:nth-child(1) > div > nav {
+  background: $c-blue;
+  color: $c-black !important;
+
+  @include lg {
+    border-bottom-left-radius: 30px !important;
+    -webkit-border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    -webkit-border-bottom-right-radius: 30px !important;
+  }
+
+  .text-gray-300 {
+    color: $c-black !important;
+  }
+}
+
+#__next > div:nth-child(1) > div > nav > div.max-w-7xl.mx-auto.lg\:px-8 > div {
+  border-bottom: none !important;
+}

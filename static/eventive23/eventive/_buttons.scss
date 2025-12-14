@@ -1,0 +1,125 @@
+button, a {
+  border-radius: 0 !important;
+  font-family: $font !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  background-color: transparent !important;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  > div > div:not(.parallax-content),
+  > button {
+    background: $c-black !important;
+    color: $c-beige !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    span {
+      color: $c-beige !important;
+      text-transform: none !important;
+      vertical-align: 0 !important;
+      font-weight: 500 !important;
+    }
+
+    svg {
+      fill: $c-beige !important;
+    }
+
+    span:not(.icon-*) {
+      font-family: $font !important;
+    }
+  }
+
+  &:hover {
+    > div > div:not(.parallax-content),
+    > button {
+      background: $c-green !important;
+      color: $c-black !important;
+
+      svg {
+        fill: $c-black !important;
+      }
+
+      span {
+        color: $c-black !important;
+      }
+    }
+  }
+}
+
+.EventList--EventListItem {
+  button, button[disabled], a {
+    &:hover {
+      > div > div:not(.parallax-content),
+      > button {
+        background: $c-beige !important;
+      }
+    }
+
+  }
+}
+
+button[disabled], div[data-reactroot] >  div > div > div > div > div + div > p + div > button {
+  border-radius: 0 !important;
+  font-family: $font !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  opacity: 0.5 !important;
+  background-color: transparent !important;
+  transition: none !important;
+
+
+  > div  {
+    background: $c-black !important;
+    color: $c-beige !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transition: none !important;
+
+    span {
+      color: $c-beige !important;
+      text-transform: none !important;
+      vertical-align: 0 !important;
+      font-weight: 500 !important;
+    }
+    svg {
+      fill: $c-beige !important;
+    }
+  }
+
+  &:hover > div {
+    background: $c-green !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+    svg {
+      fill: $c-black !important;
+    }
+  }
+
+}
+
+div[data-reactroot] >  div > div > div > div > div + div > p + div > button {
+  opacity: 1 !important;
+  margin-left: 1rem !important;
+  vertical-align: 2px !important;
+
+}
+
+.eventive__wishlist-button {
+  > div > div {
+    display: none !important;
+  }
+}
+
+.eventive__donate-button__button {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+

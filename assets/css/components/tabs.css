@@ -1,0 +1,95 @@
+.tabs--festival {
+  @apply bg-navy border-r-5 border-navy;
+}
+
+.tabs--bsf11 {
+  @apply border-r-0 border-black rounded-3xl lg:rounded-4xl;
+}
+
+.tab {
+  @apply overflow-hidden border-5 border-navy w-full flex-shrink border-r-0 transition-all duration-300 motion-reduce:transition-none;
+}
+
+.tab--default {
+  @apply border-0;
+}
+
+.tab__inside {
+  @apply relative w-full h-full flex items-center justify-start p-5 xl:px-10 xl:py-16 2xl:px-20 2xl:py-28;
+}
+
+.tab--default .tab__inside {
+  @apply items-start;
+}
+
+.tab--active {
+  @apply flex-shrink-0 w-11/12 xl:w-9/12;
+}
+
+.tabs--bsf11 .tab {
+  @apply w-24 lg:w-40 flex-shrink-0;
+}
+
+.tabs--bsf11 .tab--active {
+  @apply w-full flex-shrink;
+}
+
+.tab--active .tab__inside {
+  @apply relative z-10 translate-x-0;
+}
+
+.tabs--bsf11 .tab {
+  @apply border-4 lg:border-md 2xl:border-lg border-black rounded-3xl lg:rounded-4xl -ml-20 lg:-ml-24;
+}
+
+.tabs--bsf11 .tab--active {
+  @apply  rounded-tr-3xl rounded-br-3xl lg:rounded-tr-4xl lg:rounded-br-4xl border-r-4 lg:border-r-md 2xl:border-r-lg;
+}
+
+.tabs--bsf11 .tab .tab__inside > div {
+  @apply opacity-0;
+}
+
+.tabs--bsf11 .tab--active .tab__inside  > div {
+  @apply opacity-100;
+}
+
+.tabs--bsf11 .tab:first-child {
+  @apply ml-0;
+}
+
+.tabs--bsf11 .tab:last-child {
+  @apply rounded-tr-3xl rounded-br-3xl lg:rounded-tr-4xl lg:rounded-br-4xl border-r-4 lg:border-r-md 2xl:border-r-lg;
+}
+
+.tabs--bsf11 .tab .tab__inside > div {
+  @apply pl-2 lg:pl-4 2xl:pl-8;
+}
+
+.tabs--bsf11 .tab--0 .tab__inside > div {
+  @apply pl-0;
+}
+
+.tabs--bsf11 .tab--0 {
+  z-index: 60;
+}
+
+.tabs--bsf11 .tab--1 {
+  @apply z-50;
+}
+
+.tabs--bsf11 .tab--2 {
+  @apply z-40;
+}
+
+.tabs--bsf11 .tab--3 {
+  @apply z-30;
+}
+
+.tabs--bsf11 .tab--4 {
+  @apply z-20;
+}
+
+.tabs--bsf11 .tab--5 {
+  z-index: 10;
+}

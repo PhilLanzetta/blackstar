@@ -1,0 +1,335 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html:not(.embedded) {
+  background: $c-beige;
+}
+
+html, body {
+  background: $c-beige;
+  font-family: $font;
+  font-weight: 500;
+  line-height: 1.75;
+  color: $c-black;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app > div > div,
+.tenant-injected-html p span {
+  color: $c-black !important;
+  box-shadow: none !important;
+}
+
+.tenant-injected-html {
+  p {
+    text-align: center;
+  }
+  a {
+    color: $c-black !important;
+    font-family: $font !important;
+  }
+}
+
+form {
+  max-width: none !important;
+
+  input {
+    color: $c-black !important;
+  }
+
+  label, div {
+    color: $c-black !important;
+  }
+
+  label {
+    @include fontBold;
+    font-size: 1rem !important;
+  }
+
+  a {
+    font-family: $font !important;
+    color: $c-black !important;
+    text-decoration: none;
+  }
+
+  div {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+h2 + .tenant-injected-html > p {
+  text-align: center !important;
+}
+
+h2 + .tenant-injected-html + div > div {
+  height: auto !important;
+}
+
+
+#Eventive--banner {
+  margin-bottom: 1rem !important;
+  display: none !important;
+}
+
+@include lg {
+  #Eventive--banner {
+    display: block !important;
+    margin-top: -20px !important;
+    border-top: 80px solid $c-beige;
+    border-bottom: 20px solid $c-beige;
+    max-width: 1056px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+#app > div > div > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(1):not(div[data-radium]) {
+  display: none;
+}
+*/
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div, #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > button > div > div {
+  // background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+div[data-iframe-height] .StripeElement {
+  background: $c-white !important;
+  color: $c-black !important;
+  padding: 1rem;
+}
+
+.blackstar-skin-helper-parent.blackstar-skin-helper-schedule .eventive-mode-switcher__schedule {
+  margin: 0 5px;
+  border-right: none !important;
+
+  button > div > div:not(.parallax-content) {
+    background: $c-green !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+  }
+
+  button:hover {
+    > div > div:not(.parallax-content) {
+      background: $c-black !important;
+
+      span {
+        color: $c-beige !important;
+      }
+    }
+  }
+}
+
+.blackstar-skin-helper-parent.blackstar-skin-helper-films .eventive-mode-switcher__film-guide {
+  margin: 0 5px;
+
+  button > div > div:not(.parallax-content) {
+    background: $c-blue !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+  }
+
+  button:hover {
+    > div > div:not(.parallax-content) {
+      background: $c-black !important;
+
+      span {
+        color: $c-beige !important;
+      }
+    }
+  }
+
+}
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > form > h2,
+#app > div > div > div:nth-child(4) > div > div > form > h2 {
+  @include fontBoldSerif;
+  font-size: 2rem !important;
+  line-height: 1 !important;
+  @include lg() {
+    font-size: 3rem !important;
+    line-height: 1 !important;
+  }
+}
+
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(3) > button,
+#app > div > div > div:nth-child(4) > div > div > form > div:nth-child(3) > div:nth-child(2) > button,
+#app > div > div > div:nth-child(4) > div > div > form > div:nth-child(3) > div:nth-child(3) > button {
+  background: transparent !important;
+}
+
+/*
+
+.eventive-mode-switcher__virtual-festival {
+  margin: 0 5px;
+
+  button > div > div:not(.parallax-content) {
+    background: $c-yellow !important;
+    color: $c-black !important;
+
+    span {
+      color: $c-black !important;
+    }
+  }
+
+  button:hover {
+    > div > div:not(.parallax-content) {
+      background: $c-yellow !important;
+    }
+  }
+}
+
+.eventive-mode-switcher__film-guide  button > div > div:not(.parallax-content) {
+  background: $c-green !important;
+  color: $c-black !important;
+
+  span {
+    color: $c-black !important;
+  }
+}
+*/
+
+@import "eventive/nav";
+@import "eventive/buttons";
+@import "eventive/modals";
+@import "eventive/schedule";
+@import "eventive/film-guide";
+@import "eventive/tickets";
+@import "eventive/passes";
+@import "eventive/select";
+
+.blackstar-skin-helper {
+  a:link, a:visited {
+    color: $c-black;
+    text-decoration: underline;
+  }
+}
+
+.Eventive--WelcomeButtons {
+  > div:nth-child(1n) {
+    button > div > div:not(.parallax-content),
+    a > div > div:not(.parallax-content) {
+      background: $c-green !important;
+      color: #000000 !important;
+      span {
+        color: #000000 !important;
+      }
+    }
+  }
+
+  > div:nth-child(2n) {
+    button > div > div:not(.parallax-content),
+    a > div > div:not(.parallax-content) {
+      background: $c-yellow !important;
+      color: #000000 !important;
+      span {
+        color: #000000 !important;
+      }
+    }
+  }
+
+  > div:nth-child(3n) {
+    button > div > div:not(.parallax-content),
+    a > div > div:not(.parallax-content) {
+      background: $c-blue !important;
+      color: #000000 !important;
+      span {
+        color: #000000 !important;
+      }
+    }
+  }
+
+  .Eventive--TenantButton button:hover > div > div:not(.parallax-content) span,
+  .Eventive--TenantButton a:hover > div > div:not(.parallax-content) span  {
+    color: $c-black !important;
+  }
+}
+
+body > div:nth-child(13) > div > div > div > div > span[role=menuitem] {
+  color: $c-black !important;
+}
+
+.blackstar-skin-helper-parent.blackstar-skin-helper-schedule #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div > div > div > div > div:nth-child(2),
+.blackstar-skin-helper-parent.blackstar-skin-helper-schedule #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div > div > div > div > div:nth-child(2){
+  background: $c-black !important;
+}
+
+.blackstar-skin-helper-parent.blackstar-skin-helper-schedule #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div > div > div > div > div:nth-child(1),
+.blackstar-skin-helper-parent.blackstar-skin-helper-schedule #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div > div > div > div > div:nth-child(1){
+  background: $c-blue !important;
+  border: 1px solid $c-black !important;
+}
+
+.blackstar-skin-helper-schedule.blackstar-skin-helper-viewMode-grid #app > div > div > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) button,
+.blackstar-skin-helper-schedule.blackstar-skin-helper-viewMode-grid #app > div > div > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) button {
+  @include borderSm;
+  color: $c-black !important;
+  border: 1px solid $c-black !important;
+}
+
+.Tag {
+  @include borderSm;
+}
+
+.blackstar-skin-helper-schedule.blackstar-skin-helper-viewMode-cover .EventList--EventGridListItem {
+  @include borderWatchAlt;
+
+  margin: 0 0.5rem !important;
+
+  @include lg {
+    margin: 0 !important;
+  }
+
+  img {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+}
+
+.blackstar-skin-helper-films:not(.blackstar-skin-helper-parent) #app > div > div > div:nth-child(4) > div > div > div > div > div:nth-child(1) > div,
+.blackstar-skin-helper-films:not(.blackstar-skin-helper-parent) #app > div > div > div:nth-child(4) > div > div > div > div > div:nth-child(1) > div > button {
+  background: transparent !important;
+}
+
+.eventive__wishlist-button + div > div {
+  box-shadow: none !important;
+}
+
+.eventive__donate-button__button button {
+  background: $c-beige !important;
+}
+
+body.blackstar-skin-helper-account .Eventive--Dialog button,
+body.blackstar-skin-helper-forgot form button {
+  background: $c-beige !important;
+}
+
+#Eventive--orderSummary--orderSuccess > div:nth-child(3) > div > div:nth-child(1),
+#Eventive--orderSummary--orderSuccess > div:nth-child(3) > div > div:nth-child(2){
+  border-radius: 1.5rem !important;
+}
+
+#Eventive--orderSummary--orderSuccess > div:nth-child(3) > div > div:nth-child(1) > button,
+#Eventive--orderSummary--orderSuccess > div:nth-child(3) > div > div:nth-child(2) > button {
+  background: transparent !important;
+}
+

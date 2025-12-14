@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.055" height="18.706" viewBox="0 0 18.055 18.706">
+  <g transform="translate(-304.576 -411.7)" opacity="0.7">
+    <g transform="translate(305 412)">
+      <g transform="translate(0 0)">
+        <path d="M286.779,171.179l-.431-.418-7.857,7.893V161.815h-.658V178.65l-7.848-7.848-.409.409,8.586,8.586Z" transform="translate(-269.575 -161.815)"/>
+        <path d="M278.161,180.221l-9.01-9.01.833-.833,7.548,7.548v-16.41h1.258v16.413l7.554-7.588.862.836Zm-.029-.877.029.029.029-.029V162.115h-.058Z" transform="translate(-269.575 -161.815)"/>
+      </g>
+    </g>
+  </g>
+</svg>

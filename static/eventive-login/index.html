@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>BlackStar Festival Login</title>
+  <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript" src="https://festival.blackstarfest.org/loader.js"></script>
+
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+    }
+
+    .eventive-login {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      font-size: 0;
+    }
+
+    a {
+      color: #000000 !important;
+    }
+
+    .eventive-widget-container,
+    .eventive-widget-container > div > div,
+    .eventive-widget-container > div > div > div {
+      background: #F2F2F2 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 auto !important;
+    }
+
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(3) > div:nth-child(1),
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(4) > div:nth-child(1) {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(3) > div:nth-child(1) > button,
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(4) > div:nth-child(1) button {
+      background: #000 !important;
+      color: #FFF !important;
+      border-radius: 2rem !important;
+    }
+
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(3) > div:nth-child(1) > button div,
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(4) > div:nth-child(1) > button div {
+      background: transparent !important;
+      opacity: 1 !important;
+    }
+
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(3) > div:nth-child(2),
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(3) > div:nth-child(3),
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(4) > div:nth-child(2),
+    body > div:nth-child(3) > div > div:nth-child(1) > div > div > div > div > div > div > form > div:nth-child(4) > div:nth-child(3) {
+      display: none !important;
+    }
+
+    .eventive-widget-container > div + div {
+      display: none !important;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  </style>
+
+</head>
+<body>
+<div ref="eventive-login" class="eventive-login"/>
+<script type="text/javascript">
+  window.Eventive.on('ready', function () {
+    var eventivePoll = setInterval(() => {
+      var eventiveLoginLink = document.querySelector('.eventive-login a')
+      if (eventiveLoginLink) {
+        clearInterval(eventivePoll)
+        eventiveLoginLink.click()
+      }
+    }, 100)
+  })
+
+  window.addEventListener('click', function (e) {
+    if (e.target && e.target.href && e.target.href.includes('/forgot')) {
+      window.location.reload()
+    }
+  })
+</script>
+</body>
+</html>
